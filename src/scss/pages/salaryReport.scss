@@ -1,0 +1,45 @@
+
+.salary-report{
+    height:1000px;
+    background:#fff;
+    .salaryReport{
+        width: 1000px;
+        margin: 20px auto 0px;
+        .ant-select{
+            margin-right: 62px
+        }
+    }
+    .chartTab{
+        text-align: center;
+        margin-top: 20px;
+        .ant-btn{
+            margin-right: 20px
+        }
+    }
+    .box-border{
+        width: 1000px;
+        height: 500px;
+        margin: 30px auto
+    }
+    table{
+        width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+        //border: 1px solid #CCCCCC;
+        tr{
+            //border: 1px solid #CCCCCC;
+            td{
+                text-align: center;
+                //border: 1px solid #CCCCCC;
+            }
+            th{
+                text-align: center;
+                background: #0086C9;
+                span{
+                    color:#fff
+                } 
+            }
+        }
+        
+    }
+}

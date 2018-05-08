@@ -1,0 +1,32 @@
+.job-page {
+    // 紧急图标
+    .urgent-icon {
+        background-image: url(/static/images/job/urgent.png);
+        background-repeat: no-repeat;
+        width: 13px;
+        height: 21px;
+        display: block;
+        margin-left: 5px;
+    }
+    .left-nav,.right-panel {
+        height: 930px;
+    }
+    input {
+        width: 249px;
+    }
+    .pull-right {
+        .float-button {
+            bottom: 0px;
+            button {
+                background-size: 26px 26px;
+                background-image: url(/static/images/plus.png);
+            }
+        }
+    }
+    table {
+        .positionname:hover {
+            text-decoration: underline;
+            color: $theme-color;
+        }
+    }
+}

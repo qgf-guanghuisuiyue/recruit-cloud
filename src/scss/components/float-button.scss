@@ -1,0 +1,28 @@
+.float-button {
+    position: absolute;
+    right: 0px;
+    font-size: 0;
+    button {
+        &:hover,&:focus {
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-color: $theme-color;
+        }
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        display: block;
+        background-color: $theme-color;
+        right: 0px;
+        bottom: 0px;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    span {
+        font-size: 14px;
+        color: #868686;
+        line-height: 14px;
+        margin-top: 8px;
+        display: block;
+    }
+}

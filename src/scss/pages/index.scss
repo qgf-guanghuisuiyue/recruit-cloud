@@ -1,0 +1,272 @@
+.index-page {
+    padding-bottom: 18px;
+    .list-block {
+        overflow: auto;
+        margin-top: 16px;
+    }
+    .time,.mission,.task-progress,.entry-person {
+        background-color: #FFF;
+    }
+    .title {
+        position: relative;
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: bold;
+        background-image: url(/static/images/index/more.png);
+        background-position: 100% 0%;
+        background-repeat: no-repeat;
+        padding-bottom: 12px;
+        color: $theme-font-color;
+        z-index: 3;
+    }
+    .pull-left {
+        width: 270px;
+    }
+    // 时间
+    .time {
+        height: 64px;
+        position: relative;
+        .left {
+            position: absolute;
+            left: 13px;
+            height: 38px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        .top {
+            color: $theme-font-color;
+            font-size: 18px;
+            line-height: 18px;
+            font-weight: bold;
+        }
+        .bottom {
+            font-size: 12px;
+            line-height: 12px;
+            margin-top: 8px;
+            color: #6b6b6b;
+        }
+        .right {
+            width: 80px;
+            height: 100%;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            background-color: $theme-color;
+            color: #FFF;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 64px;
+        }
+    }
+    // 紧急任务
+    .mission {
+        margin-top: 16px;
+        height: 300px;
+        padding: 12px 13px 38px;
+        .empty {
+            margin-top: 50px;
+        }
+        .title {
+            &:hover {
+                cursor: pointer;
+            }
+            &:after {
+                @include border-bottom;
+            }
+        }
+        li {
+            height: 55px;
+            box-sizing: border-box;
+            padding: 13px 0;
+            position: relative;
+            color: $assist-color;
+            &:hover {
+                cursor: pointer;
+            }
+            &:after {
+                @include border-bottom;
+            }
+            .left {
+                position: absolute;
+                left: 0px;
+            }
+            .right {
+                position: absolute;
+                height: 29px;
+                right: 0px;
+            }
+        }
+        .top {
+            font-size: 16px;
+            line-height: 16px;
+        }
+        .bottom {
+            line-height: 12px;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        a {
+            display: block;
+            width: 50px;
+            height: 20px;
+            border: 1px solid $mission-theme-color;
+            text-align: center;
+            line-height: 20px;
+            box-sizing: border-box;
+            color: $mission-theme-color;
+            font-size: 16px;
+            margin-top: 4px;
+            &:hover {
+                cursor: default;
+            }
+        }
+    }
+    .empty-area {
+        margin-top: 50px;
+    }
+    // 任务完成进度
+    .task-progress {
+        height: 330px;
+        padding: 13px;
+        .pie-chart {
+            height: 276px!important;
+            width: 244px;
+        }
+    }
+    // 待入职人员
+    .entry-person {
+        // min-height: 413px;
+        width: 914px;
+        height: 540px;
+        position: relative;
+        padding-bottom: 10px;
+        .title {
+            margin: 12px 12px 0;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .ant-table-wrapper {
+            margin-top: 0;
+        }
+        th {
+            background-color: $theme-color;
+            color: #FFF !important;
+        }
+        th,td {
+            padding-left: 13px !important;
+        }
+        .entry-manage{
+            display: block;
+            width: 60px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            background:#96d7fa;
+            color: white;
+            border-radius: 5px;
+            font-size: 12px 
+        }
+    }
+    //图表tab
+    .chart-tab {
+        position: absolute;
+        z-index: 2;
+        button {
+            width: 50px;
+            height: 20px;
+            border-radius: 10px;
+            padding: 0px;
+            margin-right: 9px;
+        }
+    }
+    .Corporate-video {
+        margin-top: 16px;
+        padding: 12px 13px 10px;
+        .box-border {
+            padding-bottom: 12px;
+            border: none;
+            border-bottom: 1px solid #e7eaf1;
+            height: 28px;
+            background: url(/static/images/index/more.png) no-repeat right top
+        }
+        
+    }
+    
+
+    .line-title{
+        position:absolute;
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: bold;
+    }
+     .pull-right .box-border canvas{
+        height: 330px !important;
+        top:40px!important
+    }
+
+    .jianli-data {
+        font-weight: bold;
+        color: red
+    }
+
+    .Calendar-title{
+        margin: 10px;
+        padding-bottom: 10px;
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: bold;
+        border-bottom: 1px solid $border-color;
+        
+    }
+    .Calendar-title .anticon-plus-circle-o{
+          background:#118ecd!important;
+          color:white!important;
+          float:right ;
+          width: 20px;
+          height: 20px;
+          border-radius: 10px;
+          font-size: 21px;
+         
+      }
+
+      
+
+}
+.memomodal .ant-modal-footer {
+    text-align: center!important; 
+}
+.memomodal .ant-modal-footer .ant-btn-lg {
+    width:100px!important;
+    height: 35px!important 
+}
+ .memotime {
+    width: 400px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+ }
+ .memotime span {
+    font-size: 14px;
+    color: black
+ }
+ .addmemo {
+    width: 400px;
+    margin: 0 auto;   
+ }
+.addmemo span {
+    display: block;
+    height: 100px;
+    float: left;
+    font-size: 14px;
+    color: black
+}
+.Corporate-video-Tooltip{
+    .ant-tooltip-inner{
+        background-color:#cccccc!important;
+        input{
+            height: 40px!important
+        }
+    }
+}

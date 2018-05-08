@@ -1,0 +1,18 @@
+{
+    "all": {
+        "title": "全部人才",
+        "type": "all"
+    },
+    "onthjob": {
+        "title": "在职人员",
+        "type": "office"
+    },
+    "talents": {
+        "title": "社会人才",
+        "type": "social"
+    },
+    "collection": {
+        "title": "收藏",
+        "type": "collection"
+    }
+}

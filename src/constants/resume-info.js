@@ -1,0 +1,55 @@
+// ==== 信息 ====
+// 招聘人员详细信息
+export const LOAD_RESUME_INFO = "LOAD_RESUME_INFO";
+// 开始获取招聘人员详细信息
+export const LOAD_INFO_START = "LOAD_INFO_START";
+// 获取招聘人员详细信息结束
+export const LOAD_INFO_DONE = "LOAD_INFO_DONE";
+
+// 显示Modal 确定按钮loading
+export const SHOW_MODAL_LOADING = "SHOW_MODAL_LOADING";
+// 隐藏Modal 确定按钮loading
+export const HIDE_MODAL_LOADING = "HIDE_MODAL_LOADING";
+
+// 下载简历
+export const DOWNLOAD_RESUME = "DOWNLOAD_RESUME";
+export const DOWNLOAD_RESUME_START = "DOWNLOAD_RESUME_START";
+export const DOWNLOAD_RESUME_DONE = "DOWNLOAD_RESUME_DONE";
+
+export const SHOW_MODAL = "SHOW_MODAL";
+export const HIDE_MODAL = "HIDE_MODAL";
+
+//分享简历
+export const SHOW_SHARE_MODAL = "SHOW_SHARE_MODAL";
+export const HIDE_SHARE_MODAL = "HIDE_HARE_MODAL";
+
+//面试评估表
+export const SHOW_INTERVIEW_EVALUATION_MODAL = "SHOW_INTERVIEW_EVALUATION_MODAL";
+export const HIDE_INTERVIEW_EVALUATION_MODAL = "HIDE_INTERVIEW_EVALUATION_MODAL";
+
+//获取标签
+export const GET_TAGS = "GET_TAGS";
+
+//添加面试评估
+export const GET_EVALUATION = "GET_EVALUATION";
+
+//添加面试评估ID
+export const GET_EVALUATION_ID = "GET_EVALUATION_ID";
+
+
+//简历信息分享
+export const RESUME_INFORMATION = "RESUME_INFORMATION";
+
+//简历信息
+export const RESUME_INFO = "RESUME_INFO";
+
+//loading
+export const FILL_LOADING = "FILL_LOADING";
+
+//背景调查
+export const SHOW_BACKGROUNDSURVEY_MODAL = "SHOW_BACKGROUNDSURVEY_MODAL";
+export const HIDE_BACKGROUNDSURVEY_MODAL = "HIDE_BACKGROUNDSURVEY_MODAL";
+
+//分享链接MOdal
+export const SHOW_QRCODE_LINKMODAL = "SHOW_QRCODE_LINKMODAL";
+export const HIDE_QRCODE_LINKMODAL = "HIDE_QRCODE_LINKMODAL"

@@ -1,0 +1,62 @@
+a {
+    text-decoration: none;
+    color: #777777;
+    font-size: 12px;
+}
+.jOrgChart .node {
+    /* width: 80px; */
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+    margin: 2px 8px;
+    background-color:white;
+    border: 1px solid #d2d2d2;
+}
+.jOrgChart .top {
+    border-top: 2px solid #d2d2d2;
+}
+.jOrgChart .right {
+    border-left: 1px solid #d2d2d2;
+}
+.jOrgChart .left {
+    border-right: 1px solid #d2d2d2;
+}
+.jOrgChart .down {
+    background-color: #d2d2d2;
+    margin: 0px auto;
+}
+.jOrgChart .line {
+    height: 20px;
+    width: 2px;
+}
+/* =========================== */
+.blue {
+    background-color: #61b3e3 !important;
+    border: 1px solid #61b3e3 !important;
+}
+.myOnly {
+    color: white;
+}
+.first {
+    font-size: 18px;
+    color: white;
+}
+.first-name {
+    width: 200px !important;
+    background-color: #ff8a64 !important;
+    border: 1px solid #ff8a64 !important;
+}
+/* .jOrgChart .node {
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+    margin: 2px 8px;
+    background-color: #61b3e3;
+    border: 1px solid #d2d2d2;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+} */

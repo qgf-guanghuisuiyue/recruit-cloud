@@ -1,0 +1,202 @@
+// display
+.table {
+    display: table;
+    width: 100%;
+}
+.table-row {
+    display: table-row;
+}
+.table-cell {
+    display: table-cell;
+}
+
+// float
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
+}
+
+// page-content 
+.page-content {
+    margin: 0 auto;
+    width: 1200px;
+    padding-bottom: 50px;
+}
+
+.list-block {
+    overflow: auto;
+}
+
+// 垂直居中
+.vertical-center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.absolute-center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+// display
+.inline-block {
+    display: inline-block;
+}
+.none {
+    display: none;
+}
+
+
+.box-border {
+    border: 1px solid #e7eaf1;
+    box-shadow: 0 1px 3px rgba(0,37,55,.05);
+    box-sizing: border-box;
+}
+
+.right-panel {
+    background-color: #FFF;
+    width: 984px;
+    padding: 16px 16px 0;
+}
+
+.settings-block {
+    height: 400px;
+    background-color: #FFF;
+    
+}
+
+// text 
+.highlight-text {
+    text-decoration-line: none !important;
+    color: $theme-color !important;
+    text-decoration: underline;
+    &:hover {
+        color: lighten($theme-color,10%) !important;
+        text-decoration: underline;
+    }
+}
+
+.error-text {
+    color: $error-color;
+    font-size: 12px;
+}
+
+// 空项目
+.empty-area {
+    width: 116px;
+    height: 113px;
+    background-image: url(../../static/images/empty.png);
+    background-size: 116px 85px;
+    background-repeat: no-repeat;
+    background-position: 0 top;
+    padding-top: 97px;
+    text-align: center;
+    margin: 0 auto;
+}
+//改版modal
+.grey-close-header {
+    .ant-modal-header {
+        background-color: #f3f3f3;
+    }
+    .ant-modal-title {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .ant-modal-close-x {
+        background: url(/static/images/resume/close.png)   no-repeat;
+        width: 30px;
+        height: 30px;
+        margin-right: 8px;
+        margin-top: 8px;
+        &:before {
+            content: "";
+        }
+    } 
+}
+
+//输入框带星号
+.required-asterisk {
+    &:before {
+        display: inline-block;
+        margin-right: 4px;
+        content: "*";
+        line-height: 1;
+        font-size: 12px;
+        color:  #ff3131;
+    }
+}
+
+.base-info {
+    ul {
+        li {
+            margin-top: 5px;
+            font-size: 14px;
+            color: $theme-font-color;
+            &:first-child {
+                margin-top: 5px;
+                font-size: 30px;
+                font-weight: bold;
+                .en-name {
+                    margin-left: 10px;
+                    vertical-align: super;                            
+                    font-size: 16px;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+}
+@font-face {font-family: "iconfont";
+    src: url('/static/iconfont/iconfont.eot'); /* IE9*/
+    src: url('/static/iconfont/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('/static/iconfont/iconfont.woff') format('woff'), /* chrome, firefox */
+    url('/static/iconfont/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('/static/iconfont/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+  }
+
+  .iconfont {
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .salary{
+    .ant-modal-body{
+        padding: 0px;
+    }
+}
+//简历搜索的信息提示
+.searchTip{
+    top:300px;
+    width:490px!important;
+    .ant-confirm-body-wrapper{
+        text-align: center;
+        .ant-confirm-title{
+            color: #575758;
+            font-weight: normal
+        }
+        .ant-confirm-btns{
+            margin: 0 auto;
+            float: none;
+            margin-top: 40px
+        };
+        .ant-btn-primary{
+            background-color: #254C92;
+            border-color: #254C92
+        }
+    }
+    .anticon-info-circle{
+        display: none
+    }
+}

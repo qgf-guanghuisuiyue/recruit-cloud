@@ -1,0 +1,124 @@
+.memo-calendar {
+    overflow: hidden;
+    width: 270px;
+    height: 380px;
+    padding: 12px 13px 38px;
+    .memo-header {
+        background-image: url(/static/images/index/add.png);
+    }
+    .title {
+        &:hover {
+            cursor: pointer;
+        }
+        &:after {
+            @include border-bottom;
+        }
+    }
+    .memo-body {
+        p {
+            padding: 5px 0 15px;
+            text-indent:2em;
+            width: 240px;
+            height: 45px;
+            border: 1px solid transparent;
+            position: absolute;
+            z-index: 10;
+            word-wrap: break-word;
+            white-space: nowrap;
+            overflow:hidden; 
+            text-overflow:ellipsis;
+            padding: 0 8px;
+            transition: 1s height;
+            border-radius: 5px;
+        }   
+        p:hover{
+            cursor: pointer;
+            height: 200px;
+            border: 1px solid #d9d9d9;
+            background-color: white; 
+            white-space: pre-line;
+            text-overflow:inherit;
+            overflow:visible;
+            word-break:break-all;
+            word-wrap: break-word
+        }
+        .ant-fullcalendar-header {
+            padding: 0;
+            text-align: center;
+        }
+        .calendar-wrap>div{
+            height: 210px;
+            position: relative;
+        }
+        .ant-fullcalendar,.ant-fullcalendar-full,.ant-fullcalendar-table{ 
+            height: 185px
+        }
+        .ant-select-sm .ant-select-selection--single {
+            height: 18px !important;
+        }
+        .ant-select-selection {
+            border: none;
+        }
+        .ant-select-selection__rendered {
+            line-height: 18px !important;
+        }
+        .ant-radio-group-small .ant-radio-button-wrapper {
+            display: none;
+        }
+        //选中日历单元格
+        .ant-fullcalendar-month-panel-selected-cell
+        ,.ant-fullcalendar-selected-day {
+            .ant-fullcalendar-value {
+                border-radius: 100%;
+            }
+        } 
+        .ant-fullcalendar-content {
+            width: 22px;
+            height: 22px;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 100%;
+            .event-circle {
+                position: absolute;
+                width: 22px;
+                height: 22px;
+                border-width: 1px;
+                border-style: solid;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                border-radius: 100%;
+                &.expired {
+                    
+                }
+            }
+        }
+        .ant-fullcalendar-today {
+            .ant-fullcalendar-value  {
+                box-shadow: none;
+            }
+    
+        }
+    }
+}
+.add-memo-modal {
+    .ant-modal-body {
+        padding: 30px 82px 20px;
+    }
+    .ant-modal-footer {
+        border-top: none;
+        text-align: center;
+        padding: 0 16px 30px 10px;
+        .ant-btn-lg {
+            padding: 0 34px;
+        }
+        button+button {
+            margin-left: 30px;
+        }
+    }
+}

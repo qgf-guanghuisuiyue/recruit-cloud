@@ -1,0 +1,27 @@
+.LzEditor {
+    #text-editor-affix {
+        position: relative;
+        &:after {
+            @include border-bottom;
+        }
+    }
+    .RichEditor-root {
+        padding: 0;
+        border: none;
+    }
+    .RichEditor-editor {
+        border-top: 0px;
+        .public-DraftEditor-content {
+            padding: 10px;
+            margin: 0;
+            &>div>* {
+                margin: 0;
+            }
+        }
+    }
+}
+
+// 图片预览 
+.uploadingImagies {
+    text-align: center;
+}

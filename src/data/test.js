@@ -1,0 +1,32 @@
+module.exports = {
+    "51金融圈总部": [
+        {
+            "userId":"131",
+            "loginName":"51jrq",
+            "userName":"51jrq",
+            "branchId":"B_10002",
+            "loginNum":490,
+            "search51Num":0,
+            "searchZLNum":0,
+            "down51Num":0,
+            "downZLNum":0,
+            "handHistoryNum":0,
+            "hand51Num":0,
+            "handZLNum":2,
+            "resumeCount":0,
+            "positionNum":0,
+            "applicationNum_todo":10,
+            "applicationNum":49,
+            "reservationNum":32,
+            "interviewNum":17,
+            "reexaminationNum":8,
+            "entryNum":8,
+            "processedNum":50
+        },
+        {"userId":"136","loginName":"cathycheng@51jrq.com","userName":"程东梅","branchId":"B_10002","loginNum":11,"search51Num":0,"searchZLNum":0,"down51Num":0,"downZLNum":0,"handHistoryNum":0,"hand51Num":0,"handZLNum":0,"resumeCount":0,"positionNum":0,"applicationNum_todo":0,"applicationNum":0,"reservationNum":0,"interviewNum":0,"reexaminationNum":0,"entryNum":0,"processedNum":0},
+        {"userId":"137","loginName":"guychen@51jrq.com","userName":"陈浩","branchId":"B_10002","loginNum":2,"search51Num":0,"searchZLNum":0,"down51Num":0,"downZLNum":0,"handHistoryNum":0,"hand51Num":0,"handZLNum":0,"resumeCount":0,"positionNum":0,"applicationNum_todo":4,"applicationNum":0,"reservationNum":0,"interviewNum":0,"reexaminationNum":0,"entryNum":0,"processedNum":0},
+        {"userId":"138","loginName":"huyangke@51jrq.com","userName":"胡洋可","branchId":"B_10002","loginNum":33,"search51Num":0,"searchZLNum":0,"down51Num":0,"downZLNum":0,"handHistoryNum":0,"hand51Num":0,"handZLNum":0,"resumeCount":0,"positionNum":0,"applicationNum_todo":1,"applicationNum":0,"reservationNum":0,"interviewNum":0,"reexaminationNum":0,"entryNum":0,"processedNum":0},
+        {"userId":"140","loginName":"luwanding@163.com","userName":"陆万丁","branchId":"B_10002","loginNum":27,"search51Num":0,"searchZLNum":0,"down51Num":0,"downZLNum":0,"handHistoryNum":0,"hand51Num":0,"handZLNum":0,"resumeCount":0,"positionNum":0,"applicationNum_todo":3,"applicationNum":0,"reservationNum":0,"interviewNum":0,"reexaminationNum":0,"entryNum":0,"processedNum":0},
+        {"userId":"139","loginName":"winson@51jrq.com","userName":"余文忠","branchId":"B_10002","loginNum":2,"search51Num":0,"searchZLNum":0,"down51Num":0,"downZLNum":0,"handHistoryNum":0,"hand51Num":0,"handZLNum":0,"resumeCount":0,"positionNum":0,"applicationNum_todo":0,"applicationNum":0,"reservationNum":0,"interviewNum":0,"reexaminationNum":0,"entryNum":0,"processedNum":0}
+    ]
+}

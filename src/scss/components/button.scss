@@ -1,0 +1,58 @@
+.ant-btn{
+    &:active {
+        color: #FFF;
+    }
+    &:focus {
+        // color: #FFF;
+        // border-color: transparent;
+    }
+    &[disabled] {
+        color: #FFF;
+        background-color: #d9d9d9;
+    }
+}
+
+.status-button {
+    width: 54px;
+    color: #FFF;
+    display: inline-block;
+    text-align: center;
+    border-radius: 8px;
+    border: 0;
+    &:hover {
+        color: #FFF;
+    }    
+    &:focus {
+        text-decoration: none;
+    }
+    &.plan {
+        background-color: #34c776;
+    }
+    &.progress {
+        background-color: #3d9fd3;
+    }
+    &.complete {
+        background-color: #6954d8;
+    }
+    &.end {
+        background-color: #c0c0c0;
+    }
+}
+.work-status {
+    display: block;
+    width: 70px;
+    height: 25px;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 5px;
+    &.formal {
+        background-color: #bb76fb;
+    }
+    &.trial {
+        background-color: #fac23f;
+    }
+    &.depature {
+        background-color: #b2bac2;
+    }
+}

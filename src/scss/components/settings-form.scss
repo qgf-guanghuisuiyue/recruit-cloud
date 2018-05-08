@@ -1,0 +1,58 @@
+.settings-block {
+    padding-top: 20px;
+    input {
+        margin-right: 0px;
+    }
+    ul {
+        margin: 0 auto;
+        font-size: 16px;
+        color: $theme-font-color;
+        li {
+            margin-bottom: 30px;
+            &:last-child {
+                margin-bottom: 0;
+                text-align: center;
+            }
+        }
+        div.table-cell {
+            &:first-child {
+                text-align: right;
+            }
+            &:last-child {
+                padding-left: 12px;
+                box-sizing: border-box;
+            }
+        }
+    }
+
+    //选项卡居中
+    .ant-tabs-nav-scroll {
+        text-align: center;
+    }
+    .ant-tabs-nav {
+        float: none;
+    }
+    //被选中的选项卡
+    .ant-tabs-nav-container {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .ant-tabs.ant-tabs-card>.ant-tabs-bar {
+        .ant-tabs-nav-container {
+            height: inherit;
+        }
+        .ant-tabs-ink-bar {
+            visibility: visible;
+            top: 1px;
+        }
+        .ant-tabs-tab {
+            margin-right: 0;
+            padding: 9px 29px;
+            left: 1px;
+            border-radius: 0;
+        }
+    }
+    .ant-tabs-bar {
+        margin-bottom: 70px;
+    }
+}

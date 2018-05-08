@@ -1,0 +1,68 @@
+// 上传简历弹框
+.upload-resume-modal {
+    .ant-modal {
+        width: 480px !important;
+    }
+    .ant-modal-body {
+        padding-top: 20px;
+        padding-bottom: 39px;
+        font-size: 16px;
+    }
+    ul {
+        width: 440px;
+        margin: 0 auto;
+    }
+    li {
+        margin-bottom: 16px;
+        &>span {
+            margin-right: 11px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    input[type='text'] {
+        padding-left: 13px;
+        width: 285px;
+        height: 40px;
+        font-size: 16px;
+        margin-right: 16px;
+    }
+    .upload-button {
+        display: block;
+        width: 194px;
+        height: 40px;
+        margin: 40px auto;
+        font-size: 16px;
+    }
+    .tips-wrapper  {
+        width: 440px;
+        margin: 0 auto;
+        font-size: 14px;
+        color: #868686;
+    }
+}
+// 职位推荐弹框
+.recommend-resume-modal {
+    .ant-modal {
+        width: 1000px !important;
+    }
+    .ant-modal-body {
+        padding: 20px 24px 29px;
+        font-size: 16px;
+    }
+    input[type='text']{
+        width: 249px;
+        height: 40px;
+    }
+}
+// 上传附件弹框
+.upload-attchment-modal {
+    button:focus {
+        color: rgba(0,0,0,.65) !important;
+        border-color:#d9d9d9 !important;
+    }
+    .ant-modal-body {
+        padding-bottom: 40px;
+    }
+}

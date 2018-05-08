@@ -1,0 +1,412 @@
+.resume-info-modal {
+    .ant-modal {
+        padding-bottom: 0px;
+    }
+    .ant-modal-body {
+        padding: 30px 30px;
+        font-size: 16px;
+    }
+    // 输入框
+    input[type='text'] {
+        width: 285px;
+        height: 40px;
+        font-size: 16px;
+        margin:0 11px;
+    }
+    // 添加标签按钮
+    .addTag-button {
+        width: 65px;
+        height: 30px;
+        font-size: 16px;
+    }
+    // 添加标签区域
+    .tag-area {
+        margin-top: 27px;
+    }
+    // 标签样式
+    .ant-tag {
+        height: 26px;
+        line-height: 26px;
+        padding: 0 10px;
+        background-color: transparent;
+        border-radius: 0;
+        font-size: 14px;
+        color: $theme-color;
+        border: 1px solid $theme-color;
+        margin-top: 8px;
+    }
+    // 单选按钮样式
+    .ant-radio-wrapper {
+        margin-right: 27px;
+    }
+    .ant-radio-inner {
+        width: 18px;
+        height: 18px;
+        background-color: #ebebeb;
+        border-radius: 4px;
+        &:after {
+            border-radius: 2px;
+            width: 10px;
+            height: 10px;
+        }
+    }
+    .ant-radio+span {
+        padding-right: 0px;
+        padding-left: 4px;
+        font-size: 16px;
+        color: #868686;
+    }
+    //职位申请
+    &.resume-reply-modal,&.resume-offer-modal {
+        .ant-modal {
+            width: 500px !important;
+        }
+    }
+    // 预约管理
+    &.resume-subscribe-modal {
+        .ant-modal {
+            width: 560px !important;
+        }
+    }
+
+    //面试管理
+    &.resume-interview-modal,&.resume-retest-modal {
+        .ant-modal {
+            width: 510px !important;
+        }
+    }
+
+    // 选择时间输入框
+    input.ant-calendar-picker-input {
+        font-size: 16px;
+        height: 40px;
+    }
+}
+.shareModal {
+    .ant-tabs-nav{
+        left: 32%
+    }
+    .title {
+        font-size: 18px;
+        color: #515151;
+    }
+    .content {
+        font-size: 14px;
+        color: #868686;
+        i {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        .phone {
+            width: 15px;
+            height: 24px;
+            background: url(/static/images/resume/phone.png);
+        }
+        .sweep {
+            width: 19px;
+            height: 19px;
+            background: url(/static/images/resume/sweep.png);
+        }
+    }
+    .hint {
+        margin-top: 32px;
+    }
+    .qrcode-body {
+        max-width: 430px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .qrcode-foot {
+        text-align: center;
+    }
+    .ant-tabs-tab {
+        font-size: 16px;
+    }
+    .inputGroup {
+        margin: 20px 0 15px;
+        .ant-input {
+            height: 45px;
+            font-size: 14px;
+            color: #868686;
+        }
+        .ant-input-group-addon {
+            padding: 0;
+            border: none;
+            .copy-link {
+                padding: 0;
+                height: 45px;
+                width: 115px;
+                font-size: 14px;
+                color: #fff;
+            }
+        }
+    }
+}
+.background-modal{
+    .ant-modal-body {
+        height: 750px;
+        overflow: auto
+    }
+    .field-list{
+        &+ul {
+            position: absolute;
+            left: 500px;
+        }
+        li{
+            margin-top: 30px;
+            &>span,
+            .inline-block>span
+             {
+                display: inline-block;
+                font-weight: bold;
+                white-space: pre-line;
+                word-break: break-all;
+                word-wrap: break-word;
+                .ant-select {
+                    font-size: 12px !important;
+                }
+                .ant-select-selection--single {
+                    height: 28px !important;
+                }
+                .ant-select-selection__rendered {
+                    line-height: 28px !important;
+                }
+                &:first-child {
+                    font-weight: normal;
+                    min-width: 90px;
+                    text-align: right;
+                    margin-right: 40px;
+                }
+            }
+        }
+    }
+}
+//面试评估表
+.evaluation-modal {
+    //left: -35px;
+    position: relative;
+    .resetForm{
+        display: block;
+        position:absolute;
+        bottom:17px;
+        background-color:#c0c0c0;
+        border-color:#c0c0c0;
+        color:#fff;
+        padding:2px 80px;
+        font-size:18px;
+        border-radius:3px;
+        left:200px;
+        z-index:100
+    }
+    .add{
+        display: block;
+        position:absolute;
+        bottom:26px;
+        background-color:#108EE9;
+        border-color:#c0c0c0;
+        color:#fff;
+        padding:2px 80px;
+        font-size:18px;
+        border-radius:3px;
+        left:425px;
+        z-index:100
+    }
+    .qrcode-write {
+        position: absolute;
+        display: none;
+        top: 45px;
+        right:0;
+        transition: right .4s ease-in;
+        padding: 4px;
+        background-color: #fff;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 14px;
+        color: #000;
+        .left-arrow {
+            width: 15px;
+            height: 25px;
+            left: -15px;
+            background: url(/static/images/resume/left-arrow.png) no-repeat;
+            box-shadow: 0 1px 3px rgba(0,37,55,.05);
+        }
+    }
+    .ant-modal-content{
+        height: 730px;
+        top:-20px
+    }
+    .ant-modal-body {
+        padding-left: 50px;
+        .title {
+            font-size: 14px;
+            color: #4d4d4d;
+        }
+        input {
+            width: 150px;
+            height: 36px;
+            margin-right: 16px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #868686;
+            padding-left: 13px;
+        }
+       
+            
+        .share {
+            width: 40px;
+            height: 40px;
+            padding: 0;
+            border: none !important;
+            background-color: #ffa93a !important;
+            img {
+                vertical-align: middle;
+            }
+        }
+        //去除table背景色
+        .ant-table-thead>tr>th {
+            background: transparent;
+            font-weight: bold;
+            text-align: center;
+            border-bottom: 1px solid $border-color;
+        }
+        .ant-table-tbody > tr > td {
+            border-bottom: none;
+            text-align: center;
+            &:first-child {
+                text-align: right;
+                padding-right: 5px;
+            }
+        }
+        .ant-table-thead tr:nth-child(2n) td, 
+        .ant-table-tbody tr:nth-child(2n) td {
+            background: transparent;
+        }
+        .ant-table-tbody>tr.ant-table-row-hover>td,
+        .ant-table-tbody>tr:hover>td,
+        .ant-table-thead>tr.ant-table-row-hover>td,
+        .ant-table-thead>tr:hover>td {
+            background: transparent;
+        }
+        // 单选按钮样式
+        .ant-radio-inner {
+            width: 18px;
+            height: 18px;
+            background-color: #ebebeb;
+            border-radius: 0;
+            &:after {
+                border-radius: 0;
+                width: 10px;
+                height: 10px;
+            }
+        }
+        .ant-radio+span {
+            padding-right: 0px;
+            padding-left: 4px;
+            font-size: 16px;
+            color: #868686;
+        }
+
+        .eva_div .eva-ul{
+            width: 100%;
+            height: 30px;
+            margin-left: 30px;
+        }
+        .eva_div .eva-ul li {
+            float: left;
+            margin-right:90px;
+            font-weight: bold;
+           
+        }
+        .eva_div .eva-jn {
+            overflow: hidden;
+            width: 100%;
+            margin: 20px 0;
+           margin-left: 30px;
+        }
+       
+        .eva_div .eva-jn li:nth-child(1){  
+            float: left;
+            margin-right:60px;
+             margin-left: 10px
+        }
+        .eva_div .eva-jn li:nth-child(2){  
+            float: right;
+            //margin-right:70px 
+        }
+        .eva_div .eva-jn li::nth-child(1){
+            text-align: right
+        }
+        .eva_div .eva-jn .li-radio{
+            width: 600px
+        }
+         .eva_div .eva-jn .li-radio .ant-radio-group{
+             width: 600px
+         }
+         .eva_div .eva-jn .li-radio .ant-radio-group .ant-radio-wrapper {
+            margin-right:100px
+         }
+        
+    }
+    .evaluation-list{
+        margin-bottom: 10px;
+        h3{
+            float:left;
+            height:30px;
+            width: 95px;
+            line-height: 30px;
+            overflow: hidden
+        }
+        .evaluation-ul{
+            width: 650px;
+            height: 32px;
+            //text-align: center;
+            overflow: hidden;
+            li{
+                float: left;
+                width: 15%;
+                margin-right: 10px;
+                a{
+                    line-height: 30px;
+                    display: block;
+                    text-align: center;
+                    width: 100%;
+                    height: 100%;
+                    border: 1px solid #d9d9d9;
+                    color: #868686;
+                    border-radius: 5px;
+                    font-weight: bolder
+                }
+                a:hover{
+                    border: 1px solid #108ee9;
+                    color: #108ee9;
+                }
+            }
+        }
+    }
+    
+    .ant-modal-footer {
+        border-top: none;
+        text-align: center;
+        .ant-btn-lg {
+            padding: 0 80px;
+            font-size: 18px;
+        }
+        .ant-btn {
+            background-color: #c0c0c0; 
+            border-color: #c0c0c0;
+            color: #fff;
+        }
+        .ant-btn-primary {
+            background-color: #108ee9; 
+            border-color: #108ee9;
+        }
+        button:nth-child(1){
+            display: none
+        }
+        button:nth-child(2) {
+            margin:0 -225px 16px 0;
+        }
+     }
+}

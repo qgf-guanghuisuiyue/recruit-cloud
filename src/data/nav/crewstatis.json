@@ -1,0 +1,32 @@
+{
+    "sum": {
+        "desc": "全部人员",
+        "num": 0,
+        "numColor": "#ef5672",
+        "type": "sum"
+    },
+    "formal": {
+        "desc": "正式员工",
+        "num": 0,
+        "numColor": "#bb76fb",
+        "type": "formal"
+    },
+    "trial": {
+        "desc": "试用期",
+        "num": 0,
+        "numColor": "#fac23f",
+        "type": "trial"
+    },
+    "hired": {
+        "desc": "待入职人员",
+        "num": 0,
+        "numColor": "#489bf4",
+        "type": "hired"
+    },
+    "departure": {
+        "desc": "离职员工",
+        "num": 0,
+        "numColor": "#b2bac2",
+        "type": "departure"
+    }
+}

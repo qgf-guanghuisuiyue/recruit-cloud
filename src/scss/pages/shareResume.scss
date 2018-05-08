@@ -1,0 +1,32 @@
+.showResume{
+    overflow:hidden;
+    width:900px;
+    margin:0 auto;
+    margin-top: 30px;
+    border: 1px solid #8CB6C0;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    .resume-info{
+       overflow:hidden;
+       margin: 20px;
+       .title{
+           height: 30px;
+           line-height: 30px;
+           padding-left: 20px;
+           color: #3876D5;
+           background:url(/static/images/more.png);
+           background-size: 11px 13px;
+           background-position: 0% 50%;
+           background-repeat: no-repeat;
+       };
+       ul{
+           padding-left: 20px;
+           .content{
+               padding-left: 20px
+           }
+       }
+       li{
+           margin: 10px 0px
+       }
+    }
+}

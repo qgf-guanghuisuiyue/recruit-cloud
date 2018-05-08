@@ -1,0 +1,230 @@
+.modal-recruit {
+    .ant-modal {
+        padding-bottom: 0 !important;
+        height: 95%;
+    }
+    .ant-modal-content {
+        height: 100%;
+    }
+    .ant-modal-body {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        padding: 46px 0 0 !important;
+        height: 100%;
+        text-align: left !important;
+    }
+}
+
+.resume-info-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    // padding: 20px 30px;
+    background-color: #FFF;
+    // 头部信息
+    .header-info {
+        width: 1008px;
+        margin: 0 auto;
+        font-size: 0px;
+        overflow: hidden;
+        img {
+            width: 105px;
+            height: 140px;
+        }
+        .info-right {
+            vertical-align: top;
+            width: 880px;
+            margin-left: 23px;
+            position: relative;
+            ul {
+                font-size: 0;
+                color: $theme-font-color;
+                li {
+                    &:first-child {
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                    font-size: 14px;
+                    line-height: 15px;
+                }
+            }
+        }
+        button {
+            width: 114px;
+            height: 40px;
+            font-size: 18px;
+            margin-left: 16px;
+            &.share {
+                width: 40px;
+                padding: 0;
+                border: none !important;
+                background-color: #ffa93a !important;
+                img {
+                    vertical-align: middle;
+                }
+                &:focus {
+                    border: none !important;
+                    background-color: #ffa93a !important;
+                }
+            }
+        }
+        .info-bottom {
+            position: relative;
+            font-size: 16px;
+            margin-top: 29px;
+            .table {
+                margin-bottom: 16px;
+            }
+            .table-cell {
+                &:first-child {
+                    span{
+                        color: $theme-font-color;
+                    } 
+                    &+div {
+                        min-width: 766px;
+                    }
+                }
+                &.tags span {
+                        color: $theme-color;
+                    }
+                // 标签样式
+                .ant-tag {
+                    height: 26px;
+                    line-height: 26px;
+                    padding: 0 10px;
+                    background-color: transparent;
+                    border-radius: 0;
+                    font-size: 14px;
+                    color: $theme-color;
+                    border: 1px solid $theme-color;
+                }
+                &.assess {
+                    button {
+                        height: 30px;
+                        font-size: 14px;
+                        padding: 0 11px;
+                        margin-left: 0;
+                    }
+                    span {
+                        margin-left: 6px;
+                    }
+                    img{
+                        vertical-align: middle;
+                    }
+                    .ant-btn {
+                        &:focus {
+                            //color: #b6b6b6 !important;
+                            background-color: #FFF;
+                            border-color: #b6b6b6 !important;
+                        }
+                    }
+                    
+                }
+            }
+            ul {
+                color: #868686;
+            }
+            img {
+                width: 127px;
+                height: 35px;
+            }
+        }
+        // 职位推荐按钮
+        .ant-btn-orange {
+            background-color: #f9a326;
+            position: absolute;
+            top: 56px;
+            right: 0;
+            color: #FFF;
+            border: 0;
+        }
+    }
+    // tabs
+    .tabs-container {
+        width: 1008px;
+        height: 39px;
+        margin: 20px auto;
+        li {
+            box-sizing: border-box;
+            height: 39px;
+        }
+        .empty {
+            width: 386px;
+            border-bottom: 1px solid $border-color;
+        }
+        .tab-item {
+            width: 118px;
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid $border-color;
+            transition: background-color .5s linear;
+            &:hover {
+                cursor: pointer;
+                background-color: lighten($border-color,10%);
+            }
+            &.active {
+                border-top: 2px solid $theme-color;
+                border-bottom: none;
+                &:hover {
+                    background-color: #FFF;
+                }
+            }
+        }
+        .boder-right-none {
+            border-right: none;
+        }
+    }
+    // 信息主体
+    .info-content {
+        .info-list {
+            font-size: 14px;
+            color: $theme-font-color;
+            .info-item {
+                margin-bottom: 36px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            .title {
+                font-size: 18px;
+                line-height: 19px;
+                font-weight: bold;
+                background-image: url(/static/images/more.png);
+                background-size: 11px 13px;
+                background-position: 0% 50%;
+                background-repeat: no-repeat;
+                padding-left: 19px;
+                margin-bottom: 17px;
+            }
+            .field-list {
+                margin-left: 19px;
+                li {
+                    line-height: 26px;
+                    white-space: pre-wrap;
+                }
+            }
+        }
+        .common-list {
+            .field-list {
+                border-bottom: 1px solid $border-color;
+                padding-bottom: 16px;
+                margin-bottom: 16px;
+                &:last-child {
+                    border-bottom: none;
+                    padding-bottom: 0;
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .space {
+            letter-spacing: 2em;
+            &+span {
+                position: relative;
+                left: -28px;
+            }
+        }
+    }
+}

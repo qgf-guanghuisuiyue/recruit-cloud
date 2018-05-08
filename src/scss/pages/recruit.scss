@@ -1,0 +1,27 @@
+.recruit-page {
+    .left-nav,.right-panel {
+        height: 955px;
+    }
+    .form {
+        position: relative;
+        input {
+            width: 249px;
+        }
+        .ant-cascader-picker input {
+            margin-right: 0;
+        }
+        .float-button {
+            bottom: -35px;
+            button {
+                
+                background-size: 31px 34px;
+                background-image: url(/static/images/recruit/import.png);
+            }
+        }
+    }
+    .ant-table-selection-column{
+        min-width: 35px !important;
+        width: 35px !important;
+        padding: 0px !important
+    }
+}

@@ -1,0 +1,62 @@
+.left-nav {
+    width: 200px;
+    background-color: #FFF;
+    .title {
+        display: block;
+        padding: 13px 0;
+        width: 174px;
+        font-size: 14px;
+        font-weight: bold;
+        color: $theme-font-color;
+        position: relative;
+        margin: 0 auto;
+        &:after {
+            @include border-bottom;
+        }
+    }
+    dl {
+        margin-top: 12px;
+        dd {
+            position: relative;
+            height: 46px;
+            line-height: 46px;
+            padding-left: 13px;
+            font-size: 14px;
+            color: #868686;
+            &.active,&:hover {
+                background-color: #efefef;
+                color: $theme-color;
+                font-weight: bold;
+            }
+            &.active {
+                background-image: url(/static/images/arrow.png);
+                background-repeat: no-repeat;
+                background-size: 8px 12px;
+                background-position: 179px 50%;
+            }
+            &:hover {
+                cursor:pointer;
+            }
+            .ant-badge {
+                font-weight: normal;
+            }
+        }
+    }
+    .delete {
+        display: inline-block;
+        position: absolute;
+        background-color: $theme-color;
+        top: 0;
+        bottom: 0;
+        right: 12px;
+        width: 24px;
+        height: 24px;
+        border-radius: 5px;
+        margin: auto;
+        text-align: center;
+        line-height: 24px;
+        img {
+            height: 14px;
+        }
+    }
+}

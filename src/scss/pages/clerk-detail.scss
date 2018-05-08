@@ -1,0 +1,1226 @@
+.clerk-detail-container {
+    .control {
+        margin-top: 0;
+        padding: 20px;
+        height: 200px;
+        background-color: #ebebeb;
+        .ctr-btns {
+            .inline-block {
+                margin-left: 36px;
+                margin-top: 4px;
+                &.hint {
+                    position: relative;
+                    .round {
+                        position: absolute;
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 100%;
+                        background-color: #c50813;
+                        top: -3px;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+    .header-info {
+        margin: 0 auto;
+        margin-top: -138px;
+        padding: 39px 30px;
+        width: 1033px;
+        height: 198px;
+        background-color: #fff;
+        box-shadow: 0 5px 13px rgba(4,0,0,.12);
+        .prime-name {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            border-radius: 100%;
+            background-color: #66bcec;
+            text-align: center;
+            line-height: 120px;
+            span {
+                font-size: 54px;
+                color: #fff;
+            }
+        }
+
+        .ctr-btns {
+            margin-top: 45px;
+            button {
+                width: 100px;
+                height: 30px;
+                font-size: 14px;
+                margin-left: 10px;
+                // &:first-child {
+                //     position: relative;
+                //     color: #c74315;
+                //     border-color: #c74315;
+                //     img {
+                //         position: absolute;
+                //         top: -1px;
+                //         right: 0;
+                //     }
+                //     &:focus {
+                //         border-color: #c74315 !important;
+                //         color: #c74315 !important;
+                //     }
+                // }
+                img {
+                    vertical-align: middle;
+                }
+                span {
+                    margin-right: 3px;
+                }
+            }
+            .ant-btn {
+                &:focus {
+                    background-color: #FFF;
+                    color: $theme-color !important;
+                    border-color: $theme-color !important;
+                }
+            }
+            .ant-select-selection {
+                height: 30px !important;
+                margin-left:10px !important;
+            }
+            .ant-select-selection__rendered {
+                line-height: 30px !important;
+            }
+        }
+    }
+    .clerk-nav-tabs {
+        .ant-tabs-bar {
+            margin: 35px auto 45px;
+        }
+        .ant-tabs-ink-bar {
+            top: 0;
+            height: 3px;
+        }
+    }
+    .clerk-tab-container {
+        width: 1033px;
+        margin: 0 auto;
+        .title {
+            position: absolute;
+            z-index: 20;
+            top: -10px;
+            left: 0;
+            padding-right: 12px;
+            font-size: 18px;
+            line-height: 19px;
+            font-weight: bold;
+            background-image: url(/static/images/more.png);
+            background-color: #fff;
+            background-size: 11px 13px;
+            background-position: 0% 50%;
+            background-repeat: no-repeat;
+            padding-left: 19px;
+            margin-bottom: 17px;
+        }
+        .editor-wrap {
+            position: absolute;
+            z-index: 20;
+            right: 0;
+            top: -12px;
+            padding-left: 12px;
+            color: $theme-color;
+            cursor: pointer;
+            background-color: #fff;
+            img {
+                vertical-align: middle;
+            }
+            span {
+                margin-left: 6px;
+            }
+        }
+        .info-field {
+            position:relative;
+            padding: 60px 0;
+            &:before {
+                @include border-top;
+            }
+            // .upLoadMaterial:hover{
+            //     color: blue
+            // }
+            // .viewMaterial:hover{
+            //     color: blue
+            // }
+        }
+        .field-list {
+            &+ul {
+                position: absolute;
+                left: 500px;
+            }
+            li {
+                margin-top: 30px;
+                &>span,
+                .inline-block>span
+                 {
+                    display: inline-block;
+                    font-weight: bold;
+                    white-space: pre-line;
+                    word-break: break-all;
+                    word-wrap: break-word;
+                    .ant-select {
+                        font-size: 12px !important;
+                    }
+                    .ant-select-selection--single {
+                        height: 28px !important;
+                    }
+                    .ant-select-selection__rendered {
+                        line-height: 28px !important;
+                    }
+                    &:first-child {
+                        font-weight: normal;
+                        min-width: 90px;
+                        text-align: right;
+                        margin-right: 40px;
+                    }
+                }
+                .inline-tree-select>span:first-child {
+                    margin-right: 0
+                }
+                .inline-tree-select {
+                    .ant-select {
+                        font-size: 12px !important;
+                    }
+                }
+                .city-regions {
+                    .ant-cascader-picker-label {
+                        font-size: 12px;
+                        text-align: left;
+                    }
+                }
+
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    //个人信息
+    .personal-info{
+        .ant-calendar-picker-icon , .ant-select-arrow{
+            display: none!important;
+        }
+    }
+    //操作历史
+    .operate-history {
+        .ant-timeline-item-content {
+            padding: 0 0 18px 26px;
+            font-size: 14px;
+            span {
+                margin: 0 3px;
+                color: $theme-color;
+                &.op-time {
+                    margin: 0 3px 0 0;
+                    color: $theme-font-color;
+                    font-weight: bold;
+                }
+            }
+        }
+        .ant-timeline-item-head {
+            width: 14px;
+            height: 14px;
+            background-color: $border-color;
+        }
+        .ant-timeline-item-head-blue {
+            border-color: $border-color;
+            color: $border-color;
+        }
+        .ant-timeline-item:first-child {
+            .ant-timeline-item-head {
+                background-color: $theme-color;
+            }
+            .ant-timeline-item-head-blue {
+                border-color: $theme-color;
+                color: $theme-color;
+            }
+        }
+        .ant-timeline-item-tail {
+            display: none;
+        }
+    }
+}
+//人员征信
+.credit-investgation {
+    //人员征信返回界面
+    .inverst-item {
+        position: relative;
+        margin-bottom: 30px;
+        width: 890px;
+        .top-title {
+            position: relative;
+            padding: 13px 0 7px 8px;
+            line-height: 16px;
+            font-size: 16px;
+            span {
+                font-size: 14px;
+            }
+            &:after {
+                @include border-bottom;
+            }
+        }
+    }
+    .superior-content {
+
+        .info-bar {
+            margin-right: 46px;
+            span {
+                color: #868686;
+                &:first-child {
+                    color: #4d4d4d;
+                    font-size: 16px;
+                }
+            }
+        }
+        .info-right {
+            vertical-align: top;
+            margin-left: 15px;
+            .list-item {
+                line-height: 16px;
+                &:first-child {
+                    margin-bottom: 16px;
+                }
+                span {
+                    margin-right: 10px;
+                }
+            }
+        }
+        .remark {
+            vertical-align: top;
+            margin-left: 34px;
+            li {
+                margin-bottom: 20px;
+                line-height: 14px;
+                i {
+                    margin-right: 9px;
+                    width: 12px;
+                    height: 12px;
+                }
+            }
+        }
+        .duration {
+            li {
+                text-align: center;
+            }
+        }
+        .field-list {
+            li {
+                span {
+                    font-weight: normal;
+                }
+            }
+        }
+        .above-all {
+            height: 44px;
+            padding-left: 14px;
+            line-height: 44px;
+            background-color: #eee;
+        }
+        .summary {
+            margin-top: 42px;
+            .above-all {
+                padding:0 12px;
+                background-color: #eee;
+                &:first-child:before {
+                    content: '';
+                    position: absolute;
+                    top: -19px;
+                    right: 0px;
+                    left: 0;
+                    margin: auto;
+                    width: 20px;
+                    height: 20px;
+                    border: 10px solid #eee;
+                    clip-path: polygon(0 100%, 50% 0, 100% 100%);
+                }
+            }
+        }
+        table {
+            border-left: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            margin: 0 auto;
+            tr:nth-child(1){
+                width: 100%
+            }
+            tr {
+                td {
+                    border-top: 1px solid #ddd;
+                    border-right: 1px solid #ddd;
+                    padding-left: 18px;
+                    color: #868686;
+                    &:first-child,
+                    &:first-child+td+td {
+                        padding:14px 18px;
+                        background: #eeeeee;
+                        text-align: right;
+                        color:#4d4d4d;
+                        font-size: 16px;
+                        line-height: 16px;
+                    }
+                    &:first-child {
+                        width: 231px;
+                    }
+                    &:first-child+td {
+                        width: 229px;
+                    }
+                    &:first-child+td+td {
+                        width: 205px;
+                    }
+                    &:first-child+td+td+td {
+                        width: 214px;
+                    }
+                }
+            }
+        }
+    }
+    .consquence {
+        position: absolute;
+        bottom: -19px;
+        right: -10px;
+        height: 77px;
+    }
+    //身份证，手机号实名
+    .inverst-field:first-child {
+        .inverst-item {
+            padding-right: 18px;
+            margin-right: 52px;
+        }
+    }
+
+
+    //填写信息页面
+    .fill-field {
+        position: relative;
+        font-size: 16px;
+        padding-bottom: 40px;
+        // .ant-upload-list {
+        //     width: 150px;
+        //     position: relative;
+        //     top: -36px;
+        //     left: 137px;
+        // }
+        .basic-input{
+            width: 100%;
+            ul{
+                width: 100%;
+                overflow: hidden;
+                li{
+                    width: 495px;
+                    float: left;
+                }
+            }
+        }
+        
+        li {
+            //padding-bottom: 25px;
+            .inline-block {
+                width: 100%;
+                .inline-block{
+                    width: 300px;
+                }
+                &>span {
+                    display: inline-block;
+                    width: 133px;
+                    padding-right: 18px;
+                    text-align: right;
+                }
+                input {
+                    width: 262px;
+                    height: 36px;
+                    font-size: 16px;
+                    color: #868686;
+                    padding-left: 14px;
+                    &[disabled] {
+                        background-color: #eee !important;
+                    }
+                }
+               
+            }
+        }
+        .hint-field {
+            position: relative;
+            width: 100%;
+            //float: left;
+            padding-bottom: 20px;
+            //border-right: 1px dashed #E0E0E0;
+            .borderState{
+                .ant-select-selection{
+                    border: 1px solid #108EE9
+                }   
+            }
+            .borderNoneState{
+                .ant-select-selection{
+                    border: 1px solid #d9d9d9
+                }   
+            }
+            .uploadFile{
+                span{
+                   cursor:pointer;
+                   font-size: 14px;
+                   line-height: 16px;
+                   a{
+                       color: #595959;
+                       b{
+                        visibility:hidden;
+                       }
+                   }
+                }
+                span:hover{
+                    background:#E1F5FE;
+                    b{
+                        visibility:visible;
+                    }
+                }
+            }
+            .hint-title {
+                position: absolute;
+                padding: 1px 5px;
+                z-index: 20;
+                top: -22px;
+                left: 0;
+                background-color: #fff;
+                span {
+                    font-size: 18px;
+                    color: #f9973f;
+                    padding: 5px 32px 5px 0;
+                    background: url(/static/images/manager/clerk/overlook.png) no-repeat 100% 50%;
+                }
+            }
+            .hint-list {
+                margin-bottom: 10px;
+                text-align: left;
+                .ant-upload-list, .ant-upload-list-text{
+                    height: 32px
+                }
+                .span-title{
+                    line-height: 20px;
+                    position: relative;
+                    top: -5px
+                }
+                .explaination{
+                    display: block;
+                    margin-top: 10px;
+                    font-size: 12px;
+                    color: #79869C;
+                };
+                .upLoad{
+                    color:#888;
+                    font-size:32px;
+                    cursor:pointer;
+                    &:hover{
+                        color: #108EE9;
+                    }
+                }
+            }
+            .resumeSource{
+                text-align: left;
+                margin-bottom: 10px;
+                .ant-select-selection{
+                    height: 35px !important;
+                    
+                }
+                .ant-select-selection--single{
+                    top:2px;
+                }
+                .ant-select-selection__rendered{
+                    height: 35px !important;
+                    line-height: 35px !important;
+                }
+            }
+            .uploadBtn{
+                position: relative;
+                left: -130px;
+            }
+            .card-list {
+               ul {
+                   overflow:hidden;
+                   margin: 0 30px;
+                   //height: 240px;
+                   width: 620px;
+                   li{
+                        cursor: pointer;
+                        border-radius: 5px;
+                        padding-bottom: 15px;
+                        margin: 20px;
+                        text-align:center;
+                        width:115px;
+                        height: 80px;
+                        border:1px solid #E0E0E0;
+                        float: left;
+                        font-size: 12px;
+                        .iconfont{
+                            color:#3188ff;
+                            font-size:18px;
+                            display:block;
+                            margin-bottom:-12px;
+                            margin-top:6px;
+                        }
+                        .i{
+                            font-size:23px;
+                            margin-bottom:-20px;
+                        }
+                   }
+                   li:hover{
+                       border-color: #3188ff;
+                   }
+               }
+               .peopleSearch{
+                   width: 620px;
+                   //float: left;
+               }
+            }
+        }
+        .SurveyPlan{
+            width: 300px;
+            overflow: hidden;
+            float: right;
+            .p-title{
+                width: 100%;
+                height: 30px;
+                background: #9FA8DA;
+                color: #fff;
+                font-weight: none;
+                text-align: center;
+                line-height: 30px;
+                border-radius: 5px;
+                letter-spacing:3px
+            }
+            .data{
+                overflow: hidden;
+                .basicData{
+                    overflow: hidden;
+                    width: 300px;
+                    //margin-left: 70px;
+                    float: left;
+                    height: 380px;
+                   
+                    .basicDataUl{
+                        width: 100%;
+                        padding-left: 30px;
+                        //border-right: 1px solid #E3E1E1;
+                        li{
+                            float: left;
+                            line-height: 32px;
+                            text-align: center;
+                            font-size: 14px;
+                            border-radius: 3px;
+                            margin: 10px 0px;
+                            a{
+                                color: #595959;
+                                line-height: 30px;
+                                display: block;
+                                border-radius: 3px;
+                                b{
+                                    visibility:hidden;
+                                }
+                            }
+                        };
+                        li:hover a{
+                            background: #E1F5FE;
+                            b{
+                                visibility:visible
+                            }
+                        }
+                    }
+                    
+                }
+                .work{
+                    overflow: hidden;
+                    width: 300px;
+                    height: 300px;
+                    float: right;
+                    .workUl{
+                        width: 100%;
+                        padding-left: 30px; 
+                        li{
+                            float: left;
+                            text-align: center;
+                            font-size: 14px;
+                            border-radius: 3px;
+                            margin: 10px 0px;
+                            a{
+                                color: #595959;
+                                line-height: 30px;
+                                display: block;
+                                border-radius: 3px;
+                                b{
+                                    visibility:hidden;
+                                }
+                            }
+                        };
+                        li:hover a{
+                            background: #E1F5FE;
+                            b{
+                                visibility:visible
+                            }
+                        }
+                    }
+                    
+                }
+                .express{
+                    overflow: hidden;
+                    .expressUl{
+                        width: 100%;
+                        li{
+                            width: 150px;
+                            float: left;
+                            margin: 10px 20px 10px 20px;
+                            text-align: center;
+                            font-size: 14px;
+                            border-radius: 3px
+                        };
+                        li:hover{
+                            color: white;
+                            background: #9E9E9E
+                        }
+                    }
+                    
+                }
+                .other{
+                    overflow: hidden;
+                    .otherUl{
+                        width: 100%;
+                        li{
+                            width: 150px;
+                            float: left;
+                            margin: 10px 20px 10px 20px;
+                            text-align: center;
+                            font-size: 14px;
+                            border-radius: 3px
+                        };
+                        li:hover{
+                            color: white;
+                            background: #9E9E9E
+                        }
+                    }
+                    
+                }
+            }
+        }
+        .bottomBtn{
+            text-align: left;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+        &:first-child {
+            .hint-field {
+                .hint-title {
+                    span {
+                        padding: 5px 25px 5px 0;
+                        background-image: url(/static/images/manager/clerk/bell.png);
+                    }
+                }
+            }
+        }
+
+        //卡片列表
+        .card-list {
+            .ant-card {
+                height: 163px;
+                cursor: pointer;
+                font-size: 22px;
+                border-radius:0;
+                background: inherit;
+                &:hover{
+                    box-shadow:1px 1px 7px rgba(21,135,199,.3);
+                }
+            }
+            .ant-card-body {
+                padding-top: 33px;
+                text-align: center;
+            }
+            .custom-image {
+                text-align: center;
+            }
+            .custom-card {
+                color: #868686;
+            }
+            .ant-row {
+                &:first-child {
+                    .ant-col-8 {
+                        &:first-child+.ant-col-8 {
+                            .ant-card {
+                                font-size: 14px;
+                            }
+                            .ant-card-body {
+                                padding-top: 23px;
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//原因列表
+.checked-factors {
+    .ant-tag {
+        margin-right: 24px;
+        width: 130px;
+        height: 30px;
+        line-height: 30px;
+        padding: 0;
+        border-radius: 0;
+        border: 1px solid #868686;
+        background: #fff;
+        color: #868686;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .ant-tag-checkable {
+        background-color: #fff;
+        border-color: #868686;
+    }
+    .ant-tag-checkable:not(.ant-tag-checkable-checked):hover {
+        background-color: #fff;
+        color: $theme-color;
+        border-color: $theme-color;
+    }
+    .ant-tag-checkable-checked {
+        color: $theme-color;
+        border-color: $theme-color;
+    }
+}
+
+.ant-modal-footer {
+    padding-top: 0;
+    padding-bottom: 40px;
+    border-top: none;
+    text-align: center;
+    .ant-btn-lg {
+        padding: 0 80px;
+    }
+    button {
+        &:first-child {
+            margin-right: 16px;
+        }
+    }
+}
+//办理离职
+.dismission-wrap {
+    .ant-modal-body {
+        padding: 18px 40px 40px 40px;
+        .table-cell {
+            padding-bottom: 20px;
+        }
+        li>p {
+            margin-bottom: 16px;
+            font-size: 14px;
+            color: $theme-font-color;
+        }
+        .required-asterisk:before {
+            margin-right: 0;
+            content: "";
+        }
+        .time-field {
+            .ant-calendar-picker-icon:after {
+                content: '\E60B';
+                font-size: 16px;
+                color: #0086c9;
+            }
+        }
+        .time-field .required-asterisk,
+        .tag-area li>span {
+            margin-right: 50px;
+            font-size: 14px;
+            color: $theme-font-color;
+        }
+        .time-field input,
+        .tag-area li input[type='text'] {
+            width: 229px;
+            height: 40px;
+            font-size: 14px;
+            color: #868686;
+            padding-left: 13px;
+        }
+        .tag-area {
+            padding-top: 10px;
+            li {
+                button {
+                    margin-left: 11px;
+                    width: 65px;
+                    height: 30px;
+                    font-size: 14px
+                }
+            }
+        }
+        .tags-list {
+            .anticon-cross:before {
+                content: "\E62E";
+                font-size: 16px;
+                color: #0086c9;
+            }
+        }
+    }
+
+}
+
+//办理转正弹窗
+.permanent-wrap {
+    .ant-modal-body {
+        padding: 30px 30px 40px 40px;
+        .regular-field {
+            margin-top: 30px;
+            font-size: 14px;
+        }
+        //去掉星星
+        .required-asterisk {
+            margin-right: 40px;
+            &:before {
+                margin-right: 0;
+                content: " ";
+            }
+        }
+        .ant-calendar-picker-input {
+            font-weight: bold;
+            font-size: 14px;
+        }
+    }
+}
+//人事调动
+.transfer-personnel-wrap{
+    .ant-modal-body {
+        padding: 30px;
+        .ant-radio-wrapper {
+            margin-right: 27px;
+        }
+        .ant-radio-inner {
+            width: 18px;
+            height: 18px;
+            background-color: #ebebeb;
+            border-radius: 4px;
+        }
+        .ant-radio-inner:after {
+            border-radius: 2px;
+            width: 10px;
+            height: 10px;
+        }
+        .ant-calendar-picker-input {
+            font-weight: bold;
+            font-size: 14px;
+        }
+        li {
+            padding-bottom: 24px;
+        }
+        .city-regions > span {
+            text-align: left;
+        }
+        .inline-block>input,
+        .ant-cascader-picker input,
+        .ant-calendar-picker input {
+            width: 229px;
+            height: 40px;
+            font-size: 14px;
+            color: #868686;
+            padding-left: 13px;
+        }
+        .ant-select-arrow:before,
+        .anticon-down:before,
+        .ant-calendar-picker-icon:after {
+            content: '\E60B';
+            font-size: 16px;
+            color: $theme-color;
+        }
+
+        //去掉星星
+        .required-asterisk {
+            &:before {
+                margin-right: 0;
+                content: " ";
+            }
+        }
+
+        li>.inline-block>span,
+        li>.pull-right>.inline-block>span {
+            margin-right: 26px;
+            display: inline-block;
+            width: 80px;
+            text-align: right
+        }
+
+        //圆角矩形
+        .ant-select-selection,
+        .ant-input {
+            border-radius: 10px;
+        }
+
+        .ant-radio-button-wrapper {
+            width: 130px;
+            height: 30px;
+            margin-right: 20px;
+            text-align: center;
+            border: 1px solid #868686;
+            color: #868686;
+            &:first-child {
+                border-radius: 0;
+            }
+            &:last-child {
+                border-radius: 0;
+                border: 1px solid #868686;
+            }
+            span {
+                font-size: 14px;
+                font-weight: bold;
+            }
+            &:hover {
+                border-color:#108ee9;
+            }
+        }
+        .ant-radio-button-wrapper-checked {
+            border-color: #108ee9;
+            box-shadow: none;
+            color: #108ee9;
+            &:hover {
+                border-color: #49a9ee;
+                box-shadow: none;
+            }
+            &:first-child {
+                border-color: #108ee9;
+            }
+            &:last-child {
+                border-color: #108ee9;
+            }
+        }
+        .ant-radio-button-wrapper-focused,
+        .ant-radio-button-wrapper:hover {
+            color: #108ee9;
+        }
+    }
+}
+
+//添加附件
+.add-attactment {
+    position: relative;
+    display: inline-block;
+    margin-left: 16px;
+    margin-bottom: 16px;
+    width: 200px;
+    height: 150px;
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    background-color: $nav-bg-color;
+    text-align: center;
+    cursor: pointer;
+    .ant-upload-list{
+        height: 32px;
+    }
+    &>i {
+        margin-top: 30px;
+    }
+    p {
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #868686;
+    }
+    &:first-child {
+        margin-left: 0;
+    }
+    .preview-pics {
+        img {
+            width: 198px;
+            height: 148px;
+            border: 1px solid #d5d5d5;
+            margin-bottom: -90px;
+        };
+        #img{
+            filter:blur(3px);
+            -webkit-filter:blur(3px);
+            -moz-filter:blur(3px);
+            -ms-filter:blur(3px);
+            -o-filter:blur(3px);
+        }
+        
+        .mask{
+            position:absolute;
+            left: 0;
+            top:0;
+            width: 198px;
+            height: 148px;
+            background-image: url("/static/images/manager/clerk/mask.png");
+            display: none;
+            z-index: 50;
+           
+            i{
+                font-size:32px;
+                color:#fff;
+                position: relative;
+                top:35%;
+                cursor: pointer;
+                span{
+                    display: block;
+                    font-size: 12px;
+                }
+            }
+            i:hover{
+                color: #49ffe3
+            }
+        }
+    }
+    .preview-pics:hover .mask{
+        display: block
+    }
+}
+.add-attactment:hover .upLoadView{
+    opacity: 1;
+}
+
+.attachment-wrap {
+    .add-attactment {
+        .ant-upload.ant-upload-drag {
+            border: none;
+        }
+    }
+    .ant-modal-body {
+        padding-top: 44px;
+        text-align: center;
+        p {
+            margin-top: 20px;
+        }
+    }
+}
+.viewMaterialModal{
+    .ant-modal{
+        width: 600px!important;
+        top: 160px
+    }
+    .ant-modal-body{
+        position: relative;
+        .filemanage{
+                width:25%;
+                height:25%;
+                margin:20px;
+                float:left;
+                text-align:center
+              
+        }
+        .filemanage:hover .mask{
+            display: block
+        }
+        .viewMaterial {
+            width: 25%;
+            height: 25%;
+            margin:12px;
+            float:left;
+            text-align:center;
+            #img{
+                filter:blur(3px);
+                -webkit-filter:blur(3px);
+                -moz-filter:blur(3px);
+                -ms-filter:blur(3px);
+                -o-filter:blur(3px);
+            }
+            .viewMask{
+                width: 318%;
+                height: 885px;
+                position: absolute;
+                top: -105px;
+                left: -650px;
+                z-index: 30000;
+                background-image: url("/static/images/manager/clerk/viewMask.png");
+                i{
+                    font-size:32px; 
+                    position:relative;
+                    right:-47%;
+                    color:#fff;
+                    cursor: pointer;
+                };
+                i:hover{
+                    color: #49ffe3
+                };
+                .img{
+                        width: 70%;
+                        height:70%;
+                        display:block;
+                        margin:0 auto;
+                        position:relative;
+                        top:50px; 
+                };
+                .title{
+                    width:30px;
+                    height:100%;
+                    float:left;
+                    font-size:18px;
+                    color:#fff;
+                    position: fixed;
+                    left: 360px;
+                    top:765px
+                };
+                .viewScal{
+                        // display: flex;
+                        // justify-content: flex-start;
+                        // flex-wrap: nowrap;
+                        margin: 10px 0px;
+                        height:100px;
+                        width:2000px;
+                        //position:relative;
+                        //overflow-x:scroll;
+                        //left:400px;
+                        //top:80px;
+                        //padding-top:20px;
+                        text-align: left;
+                        background: #666666;
+                        
+                        li{
+                            margin: 0 20px;
+                            cursor: pointer;
+                            width:120px;
+                            height:110px;
+                            float:left   
+                        }
+                }
+                .viewScal:hover li{
+                    width: 120px;
+                }
+                .viewScal img:hover{
+                     transform:scale(1.05);
+                }  
+        }
+    }
+        .mask{
+            position:absolute;
+            left: 0;
+            top:0;
+            width: 100%;
+            height: 100%;
+            background-image: url("/static/images/manager/clerk/mask.png");
+            display: none;
+            i{
+                font-size:32px;
+                color:#fff;
+                position: relative;
+                top:35%;
+                span{
+                    display: block;
+                    font-size: 12px;
+                }
+            }
+            i:hover{
+                color: #49ffe3
+            }
+        }
+        .viewMaterial:hover .mask{
+            display: block
+        }
+        
+        // .viewMaterial{
+        //     img:hover{
+        //         position: absolute;
+        //         // top:82%;
+        //         // left:78%;
+        //          top:0;
+        //          left:0;
+        //         //margin-top: -400px;
+        //         //margin-left: -400px;
+        //         width: 320%;
+        //         height: 320%;
+        //         z-index: 1000
+        //     }
+        // }
+    }
+}

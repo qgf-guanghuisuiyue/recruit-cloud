@@ -1,0 +1,117 @@
+.ant-table-wrapper {
+    margin-top: 11px;
+    .ant-table,td a {
+        font-size: 14px;
+        color: #868686;
+    }
+    table {
+        table-layout: fixed;
+    }
+    .ant-table-thead , .ant-table-tbody{
+        tr:nth-child(n) {
+            td {
+                background-color: #fff;
+            }
+        }
+        tr:nth-child(2n) {
+            td {
+                background-color: #f3f3f3;
+            }
+        }
+        &> tr {
+            &>th,&>td {
+                height: 34px;
+                padding: 0px;
+                padding-left: 9px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+        }
+    }
+    .ant-table-tbody {
+        tr:hover {
+            td {
+                transition: background-color .25s ease;
+                background-color: #eef1f6;
+            }
+        }
+    }
+    .ant-table-pagination {
+        text-align: center;
+        float: inherit;
+        margin-top: 20px;
+    }
+}
+
+.ant-table-thead {
+    tr>th {
+        color: $theme-font-color !important;
+    }
+}
+
+//移动
+.table-control {
+    height: 30px;
+    margin-top: 11px;
+    button {
+        &:hover,&:focus {
+            background-repeat: no-repeat;
+            background-position: 22px 50%;
+            background-color: $theme-color;
+        }
+        width: 100px;
+        height: 30px;
+        font-size: 14px;
+        padding-left: 26px;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-position: 22px 50%; 
+        &:first-child {
+            background-image: url(/static/images/talent/move.png);
+        }
+    }
+}
+
+// 表格border-radiux 
+.ant-table, .ant-table table {
+    border-radius: 0 !important;
+}
+.span-move{
+    position:absolute;
+    left:845px;
+    top: 174px;
+    display: block;
+    border: 1px solid #a4c8e6;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 22px;
+    color: #0086c9;
+    cursor: pointer
+}
+
+.action{
+    display: block;
+    width: 60px;
+    height: 25px;
+    background:#ffad37;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 5px
+}
+.prestatusname-manage {
+    background: #67d36b;
+    color: white;
+    display: block;
+    width: 70px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 12px 
+}

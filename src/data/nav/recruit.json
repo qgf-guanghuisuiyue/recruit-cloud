@@ -1,0 +1,50 @@
+[
+    {
+        "title": "职位申请",
+        "type": "1",
+        "bgcolor": "#67d36b",
+        "num": 0
+    },
+    {
+        "title": "预约管理",
+        "type": "2",
+        "bgcolor": "#fbd03b",
+        "num": 0
+    },
+    {
+        "title": "面试管理",
+        "type": "3",
+        "bgcolor": "#ff960d",
+        "num": 0
+    },
+    {
+        "title": "复试管理",
+        "type": "4",
+        "bgcolor": "#ca7836",
+        "num": 0
+    },
+    {
+        "title": "发送offer",
+        "type": "5",
+        "bgcolor": "#b54947",
+        "num": 0
+    },
+    {
+        "title": "待入职",
+        "type": "6",
+        "bgcolor": "#00cdc1",
+        "num": 0
+    },
+    {
+        "title": "结束",
+        "type": "7",
+        "bgcolor": "#a9a9a9",
+        "num": 0
+    },
+    {
+        "title": "全部",
+        "type": "0",
+        "bgcolor": "#0186ca",
+        "num": 0
+    }
+]

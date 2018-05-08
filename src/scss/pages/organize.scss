@@ -1,0 +1,379 @@
+
+// 隐藏显示
+.hide {
+    display: none;
+}
+
+// 组织架构-部门管理-树形控件
+.tree-type {
+    width: 440px;
+    border-right: 1px solid #eeeeee;
+    .operate-button {
+        float: right;
+        margin-top: 5px;
+        .icon {
+            margin: auto 6px;
+            cursor: pointer;
+            &:hover { 
+                color: #61b0dc;
+                font-size: 16px;
+            }
+        }
+    }
+    .tree-box {
+        margin-top: 20px;
+        .ant-tree-node-content-wrapper {
+            display: inline-block;
+            padding: 3px 5px;
+            border-radius: 2px;
+            margin: 0;
+            cursor: pointer;
+            text-decoration: none;
+            vertical-align: top;
+            color: rgba(0,0,0,.65);
+            -webkit-transition: all .3s;
+            transition: all .3s;
+            position: relative;
+            &:hover {
+                background-color: #ecf6fd;
+                width: calc(100% - 18px);
+            }
+        }
+        .ant-tree-node-selected {
+            background-color: #d2eafb;
+            width: calc(100% - 18px);
+        }
+        .ant-tree-title {
+            font-size: 14px;
+        }
+        .ant-tree li span.ant-tree-iconEle, 
+        .ant-tree li span.ant-tree-switcher {
+            width: 24px;
+            height: 24px;
+            line-height: 24px;
+        }
+        .ant-tree li span.ant-tree-switcher.ant-tree-bottom_close:after, 
+        .ant-tree li span.ant-tree-switcher.ant-tree-center_close:after, 
+        .ant-tree li span.ant-tree-switcher.ant-tree-noline_close:after, 
+        .ant-tree li span.ant-tree-switcher.ant-tree-roots_close:after,
+        .ant-tree li span.ant-tree-switcher.ant-tree-bottom_open:after, 
+        .ant-tree li span.ant-tree-switcher.ant-tree-center_open:after, 
+        .ant-tree li span.ant-tree-switcher.ant-tree-noline_open:after, 
+        .ant-tree li span.ant-tree-switcher.ant-tree-roots_open:after {
+            content: '\E6CE';
+            font-size: 24px;
+            color: $theme-color;
+        }
+        //组织架构
+        .ant-tree-node-content-wrapper {
+            display: inline-block;
+            padding: 3px 5px;
+            border-radius: 2px;
+            margin: 0;
+            cursor: pointer;
+            text-decoration: none;
+            vertical-align: top;
+            color: rgba(0,0,0,.65);
+            -webkit-transition: all .3s;
+            transition: all .3s;
+            position: relative;
+            &:hover {
+                background-color: #ecf6fd;
+                width: calc(100% - 18px);
+            }
+        }
+        .ant-tree-node-selected {
+            background-color: #d2eafb;
+            width: calc(100% - 18px);
+        }
+        .ant-tree>li:first-child {
+            padding-top: 7px;
+        }
+    }
+    .ant-tree>li:first-child {
+        padding-top: 20px;
+    }
+    .ant-tree-title {
+        font-size: 14px;
+    }
+    .ant-tree-node-content-wrapper {
+        display: inline-block;
+        padding: 3px 5px;
+        border-radius: 2px;
+        margin: 0;
+        cursor: pointer;
+        &:hover {
+            background-color: #ecf6fd;
+            width: calc(100% - 18px);
+        }
+    }
+    .ant-tree-node-selected {
+        background-color: #d2eafb;
+        width: calc(100% - 18px);
+    }
+    // .ant-tree>li:first-child {
+    //     padding-top: 20px;
+    // }
+    
+}
+// 添加子部门
+.sub {
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    .sub-title {
+        color: #959595;
+    }
+    .sub-content {
+        color: #555555;
+    }
+}
+.sub2 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-left: 58px;
+    .sub-title {
+        color: #555555;
+    }
+}
+.department {
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    position: relative;
+    .name {
+        color: #959595;
+        display: inline-block;
+    }
+    .input-type {
+        display: inline-block;
+    }
+    .option-div-box {
+        position:absolute;
+        background-color: white;
+        box-shadow: 0px 0px 5px #d1d1c9;
+        width:145px;
+        border-radius: 5px;
+        top: 29px;
+        left: 71px;
+        .option-div {
+            width: 100%;
+            text-indent: 8px;
+            line-height: 28px;
+            cursor: pointer;
+        }
+        .option-div2 {
+            width: 100%;
+            text-indent: 8px;
+            line-height: 28px;
+            cursor: pointer;
+            &:hover {
+                background-color: #ecf6fd;
+            }
+        }
+    }
+}
+.department2 {
+    font-size: 14px;
+    margin-bottom: 20px;
+    position: relative;
+}
+// 组织架构-部门管理-右侧内容
+.organize-tree-right {
+    width: 590px;
+    margin-left: 13px;
+    // 抬头
+    .department-title {
+        font-size: 16px;
+        color: #222222;
+        overflow: hidden;
+        div {
+            width: 4px;
+            height: 14px;
+            margin: 6px 3px 0 0;
+            background-color: #61b0dc;
+            float: left;
+        }
+    }
+    // 下划线
+    .down-line {
+        width: 100%;
+        height: 1px;
+        background-color: #eeeeee;
+        margin-top: 10px;
+    }
+    // 下级部门
+    .sub-department {
+        .sub-title {
+            color: #666666;
+            font-size: 16px;
+            line-height: 32px;
+        }
+        .sub-depart-table {
+            width: 100%;
+            border: 1px solid #d2d2d2;
+            .sub-depart-table-title {
+                height: 34px;
+                width: 100%;
+                background-color: #f5be79;
+                color: white;
+                margin-bottom: 10px;
+                span {
+                    display: inline-block;
+                    font-size: 14px;
+                    line-height: 34px;
+                    margin-left:10px;
+                }
+                .left-width {
+                    margin-left:290px;
+                }
+            }
+            .sub-depart-table-lab {
+                font-size: 14px;
+                color: #666666;
+                padding: 8px 0;
+                cursor: pointer;
+                .left {
+                    width: 348px;
+                    margin-left:10px;
+                    display: inline-block;
+                }
+                .right {
+                    width: 230px;
+                    display: inline-block;
+                }
+                .center {
+                    text-align: center;
+                }
+                &:hover {
+                    background-color: #fef1e1;
+                }
+            }
+            .curr{
+                background-color: #fef1e1;
+            }
+        }
+        img {
+            display: block;
+            padding-top: 90px;
+            width: 93px;
+            margin: auto;
+            cursor: pointer;
+        }
+        .text {
+            font-size:16px;
+            color: #cccccc;
+            letter-spacing: 2px;
+            width: 271px;
+            margin: auto;
+            margin-top: 20px;
+            .one {
+                color: #61b3e3;
+                cursor: pointer;
+            }
+        }
+    }
+    // 部门在职员工
+    .sub-department-two {
+        margin-top: 10px;
+        .sub-title {
+            color: #666666;
+            font-size: 16px;
+            line-height: 32px;
+        }
+        .operate {
+            color: #1587c7;
+            margin-right: 34px;
+            cursor: pointer;
+        }
+        .sub-depart-table {
+            width: 100%;
+            border: 1px solid #d2d2d2;
+            .sub-depart-table-title {
+                height: 34px;
+                width: 100%;
+                background-color: #878ef2;
+                color: white;
+                margin-bottom: 10px;
+                span {
+                    display: inline-block;
+                    font-size: 14px;
+                    line-height: 34px;
+                    margin-left:10px;
+                }
+                .one {
+                    width: 20%;
+                }
+                .two {
+                    width: 40%;
+                }
+                .three {
+                    width: 17%;
+                }
+                .four {
+                    width: 16%;
+                }
+            }
+            .sub-depart-table-lab {
+                font-size: 14px;
+                color: #666666;
+                padding: 8px 0;
+                cursor: pointer;
+                span {
+                    display: inline-block;
+                    margin-left: 10px;
+                }
+                .one {
+                    width: 20%;
+                }
+                .two {
+                    width: 40%;
+                }
+                .three {
+                    width: 17%;
+                }
+                .four {
+                    width: 16%;
+                    color: #1587c7;
+                    cursor: pointer;
+                }
+                .center {
+                    text-align: center;
+                }
+                &:hover {
+                    background-color: #e7e8fc;
+                }
+            }
+            .curr{
+                background-color: #e7e8fc;
+            }
+        }
+    }
+}
+// 全员概况模块
+.condition-page {
+    // 饼图大小
+    .task-progress {
+        height: 330px;
+        padding: 13px;
+        .pie-title {
+            position: absolute;
+            top: 142px;
+            left: 108px;
+            color: #4d4d4d;
+            font-size: 16px;
+        }
+        .operate-div{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            img {
+                margin-left: 7px;
+            }
+        }
+        .pie-chart {
+            height: 310px !important;
+            width: 483px;
+        }
+    } 
+}

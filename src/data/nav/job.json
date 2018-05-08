@@ -1,0 +1,31 @@
+{
+    "all":{
+        "title": "全部",
+        "type": "all",
+        "index": 0
+    },
+    "preparation":{
+        "title": "准备中",
+        "type": "preparation",
+        "index": 1
+    },
+    "ongoing":{
+        "title": "进行中",
+        "type": "ongoing",
+        "index": 2
+    },
+    "completed":{
+        "title": "已完成",
+        "type": "completed",
+        "index": 3
+    },
+    "stop":{
+        "title": "已终止",
+        "type": "stop",
+        "index": 4
+    }
+}
+
+
+
+

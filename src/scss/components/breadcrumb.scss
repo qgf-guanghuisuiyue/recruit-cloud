@@ -1,0 +1,8 @@
+.ant-breadcrumb {
+    .hover {
+        &:hover {
+            color: $theme-color !important;
+            text-decoration: underline;
+        }
+    }
+}

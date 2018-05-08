@@ -1,0 +1,64 @@
+@import 'variable';
+@import 'initialize';
+@import 'mixin';
+@import 'common';
+
+@import 'view';
+@import 'navbar';
+
+//pages
+@import 'pages/index';
+@import 'pages/login';
+@import 'pages/job';
+@import 'pages/new-job';
+@import 'pages/recruit';
+@import 'pages/talent';
+@import 'pages/task';
+@import 'pages/change-passwd';
+@import 'pages/setting-email';
+@import 'pages/resume-info';
+@import 'pages/email';
+@import 'pages/404';
+@import 'pages/clerk';
+@import 'pages/clerk-detail';
+@import 'pages/new-clerk-form';
+@import 'pages/archives';           //档案管理
+@import 'pages/organize';
+@import 'pages/condition';
+@import 'pages/dynamics';
+@import 'pages/shareResume';
+@import 'pages/salaryReport';
+
+
+@import 'components/breadcrumb';
+@import 'components/cascader';
+@import 'components/memo-calendar';
+@import 'components/button';
+@import 'components/table';
+@import 'components/pagination';
+@import 'components/select';
+@import 'components/form';
+@import 'components/settings-form';
+@import 'components/input';
+@import 'components/float-button';
+@import 'components/preloader';
+@import 'components/job-form';
+@import 'components/mask';
+@import 'components/modal';
+@import 'components/spin';
+@import 'components/tips';
+@import 'components/recruit-info';
+@import 'components/steps';
+@import 'components/message';
+@import 'components/email-editor';
+@import 'components/nprogress';
+
+@import 'loading';
+@import 'page-loading';
+@import 'breadcrumb';
+@import 'left-nav';
+@import 'rich-editor';
+
+@import 'pages/help';
+@import 'pages/resumeSearch';
+@import 'pages/case-view';

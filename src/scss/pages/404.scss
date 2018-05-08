@@ -1,0 +1,30 @@
+.not-found-page {
+    position: relative;
+    .error-img {
+        background-image: url(/static/images/404/404.png);
+        height: 370px;
+        width: 1018px;
+        background-size: 1018px 768px;
+        background-position: 0 -53px;
+        margin: 0 auto;
+    }
+    .error-text {
+        position: absolute;
+        width: 100%;
+        top: 420px;
+        font-size: 22px;
+        color: #868686;
+        text-align: center;
+    }
+    button {
+        position: absolute;
+        top: 528px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 194px;
+        height: 40px;
+        font-size: 18px;
+       // color: white!important
+    }
+}

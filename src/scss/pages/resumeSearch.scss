@@ -1,0 +1,574 @@
+
+//简历搜索侧边栏导航
+.visible,.visible-position{
+    line-height:30px;
+    display:inline-block;
+    width:120px;
+    word-wrap: break-word; 
+    white-space: nowrap;
+    overflow:hidden; 
+    text-overflow:ellipsis
+}
+.visible:hover{
+    white-space: pre-line;
+    text-overflow:inherit;
+    overflow:visible;
+    word-break:break-all;
+    word-wrap: break-word
+}
+.resumeSearch{
+    height: 820px;
+    ul{
+        a{
+            text-decoration:none;
+            color: #868686;
+            height: 46px;
+            line-height: 46px;
+            padding-left: 13px;
+        }
+        a:hover{
+            color: #379ED1 
+        }
+    }
+    .active{
+        color: #379ED1;
+        background: url(/static/images/arrow.png) no-repeat right;
+        background-position: 175px 50%;
+        background-color: #efefef;
+        font-weight: bold;
+    }
+}
+
+.resumeSearchContent{
+    width:970px;
+    background:white;
+    overflow:hidden;
+    //简历搜索页面
+    .queryResume{
+        overflow:hidden;
+        margin:30px;
+        position: relative;
+        //height:760px;
+        .tipInfo{
+            width: 100%;
+            height: 682px;
+            .anticon-solution:before {
+                font-size: 60px
+            }
+            .anticon{
+                position: relative;
+                top: 240px;
+                left: 230px;
+                color:#E0DEE4
+            }
+        }
+        .ant-spin-spinning{
+            position: absolute;
+            left: 400px;
+            top:400px;
+        }
+        .ant-input{
+            width: 600px;
+            margin-right: 20px;
+        };
+        .example{
+            color: #8F9EB4;
+            font-size: 12px;
+            //padding-left: 10px;
+            line-height: 50px
+        }
+        .queryResult{
+            width: 880px;
+            margin: 0 auto;
+            .conditionSelect{
+                width: 880px;
+                margin: 20px auto 20px;
+                .ant-select-selection{
+                    height: 28px !important;
+                    width: 130px;
+                    font-size: 12px !important;
+                    margin-right: 20px;
+                    .ant-select-selection__rendered{
+                        line-height: 28px!important;
+                    }
+                }
+                .ant-cascader-picker{
+                    width: 130px !important;
+                    height: 28px !important;
+                    margin-right: 20px;
+                    
+                    .ant-input{
+                        width: 130px;
+                        font-size: 12px ;
+                    }; 
+                    .ant-cascader-picker-label{
+                        font-size: 12px ;
+                    }
+                }
+            };
+        }
+        
+    };
+    //我的下载页面
+    .mydownLoad{
+        //overflow:hidden;
+        margin:30px;
+        min-height:760px;
+        .ant-input{
+            width: 200px;
+            margin-right: 20px;
+        };
+        .queryResult{
+            margin:30px 20px 30px;
+            .downLoadDetail{
+                width: 100%;
+                height: 500px;
+                text-align: center;
+                .anticon-frown-o:before{
+                    font-size: 60px
+                };
+                .anticon{
+                    position: relative;
+                    top: 240px;
+                    color:#E0DEE4
+                }
+            }
+        }
+    }
+    //我的收藏
+    .collectResume{
+        //overflow:hidden;
+        margin:30px;
+        min-height:760px; 
+        .ant-input{
+            width: 220px;
+            margin-right: 50px;
+        };
+        .queryResult{
+            margin:30px 20px 30px;
+            .collectDetail{
+                width: 100%;
+                height: 500px;
+                text-align: center;
+                .anticon-frown-o:before{
+                    font-size: 60px
+                };
+                .anticon{
+                    position: relative;
+                    top: 240px;
+                    color:#E0DEE4
+                }
+            }
+        }
+    }
+    //简历详情
+    .resumeDetail{
+        min-height: 592px;
+        overflow: auto;
+        width: 100%;
+        .detail-item:hover{
+            border-left: 5px solid #3188FF;
+            border-right: 5px solid #3188FF;
+        }
+        .detail-item{
+            width: 100%;
+            padding: 10px 20px;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            background: #EBEBEB;
+            margin: 10px 0;
+            .details-item-intention{
+                width: 100%;
+                .resume-id{
+                    width: 100%;
+                    line-height: 30px;
+                }
+                .intention{
+                    width: 100%;
+                    height: 30px;
+                    //overflow: hidden;
+                    .intention-item{
+                        float: left;
+                        width: 200px;
+                        height: 30px;
+                        font-size: 12px;
+                        .positionIntention{
+                            display:inline-block;
+                            width:130px;
+                            height: 30px;
+                            padding: 0px 10px;
+                            word-wrap: break-word; 
+                            white-space: nowrap; 
+                            overflow:hidden;  
+                            text-overflow:ellipsis;
+                            position: relative;
+                            color: #108EE9;
+                            transition: .5s height
+                        };
+                        .positionIntention:hover{
+                            cursor: pointer;
+                            height: 120px;
+                            z-index: 1000;
+                            color: #525252;
+                            //border: 1px solid #d9d9d9;
+                            background-color: white; 
+                            white-space: pre-line;
+                            text-overflow:inherit;
+                            overflow:visible;
+                            word-break:break-all;
+                            word-wrap: break-word;
+                            padding: 0px 10px;
+                        }
+                        span{
+                            line-height: 30px;
+                        }
+                    }
+                }
+            };
+            .details-item-main{
+                width: 100%;
+                overflow: hidden;
+                .main-left{
+                    width: 700px;
+                    float: left;
+                    h3{
+                        line-height: 50px;
+                    }
+                    .main-left-company{
+                        overflow: hidden;
+                        p{
+                            float: left;
+                            width: 195px;
+                            margin-right: 5px;
+                            line-height: 30px;
+                            font-size: 12px;
+                        }
+                    }
+                };
+                .main-right{
+                    width: 100px;
+                    float: right;
+                    margin-top: 15px;
+                    .detailBtn:hover{
+                        color: #ffffff;
+                        background: #108ee9!important;
+                    }
+                    .ant-btn{
+                        width: 92px;
+                    }
+                }
+            }
+        }
+    };
+    //简历简版
+    .resumeSimple{
+        width: 100%;
+        min-height: 592px;
+        .resumeSimpleTable{
+            border-collapse:collapse;
+            width: 100%;
+            th{
+                background:#0090D7;
+                line-height:30px;
+                font-size:14px;
+                color:#FFF
+            }
+            tr:nth-child(odd){background:#E5F2FB}
+            tr,td{border:1px solid #fff;}
+            td{
+                text-align: center;
+                height: 50px;
+            }
+            tbody tr td:first-child{
+                border-left:5px solid transparent;
+            };
+            tbody tr td:last-child{
+                border-right:5px solid transparent;
+            };
+            tbody tr:hover td:first-child{
+                border-left:5px solid #3188FF
+            };
+            tbody tr:hover td:last-child{
+                border-right:5px solid #3188FF
+            }
+        }
+    };
+    //查看联系人
+    .candidateResume{
+        width: 880px;
+        margin-left: 20px;
+        overflow: auto;
+        .basicInfo{
+            width: 100%;
+            overflow: hidden;
+            .basicInfo-left{
+                float: left;
+                overflow: hidden;
+                margin-left: 20px;
+                h3{
+                    line-height: 50px;
+                };
+                p{
+                    line-height: 50px
+                }
+            };
+            .basicInfo-right{
+                width: 400px;
+                float: right;
+                margin-top: 20px;
+                .ant-btn{
+                    width: 100px;
+                    margin-right: 30px;
+                }
+            }
+        };
+        .jobIntension{
+            width: 100%;
+            margin-top: 20px;
+            h3{
+                line-height: 50px;
+                color: #3188FF
+            }
+            .intensionInfo{
+                margin-left: 20px;
+                li{
+                    height: 35px;
+                    span{
+                        line-height: 35px;
+                    }
+                    span:first-child{
+                        color:#8F9EB4
+                    }
+                }
+            }
+        }
+        .education{
+            width: 100%;
+            margin-top: 20px;
+            h3{
+                line-height: 50px;
+                color: #3188FF
+            }
+            p{
+                margin-left: 20px;
+            }
+        };
+        .workExperience{
+            width: 100%;
+            margin-top: 20px;
+            overflow: hidden;
+            h3{
+                line-height: 50px;
+                color: #3188FF
+            };
+            .company{
+                width: 100%;
+                overflow: hidden;
+                .company-h3{
+                    width: 300px;
+                    margin-left: 20px;
+                    float: left;
+                    color: #262626
+                }
+                p{
+                    width: 270px;
+                    float: left;
+                    line-height: 50px
+                }
+            };
+            .workInfo{
+                margin-left: 20px;
+                li{
+                    //height: 35px;
+                    margin: 10px 0;
+                    span{
+                        line-height: 35px;
+                    }
+                    span:first-child{
+                        color:#8F9EB4
+                    }
+                }
+            }
+        };
+        .projectExperience{
+            width: 100%;
+            margin-top: 20px;
+            h3{
+                line-height: 50px;
+                color: #3188FF
+            };
+            .projectExperience-title{
+                line-height: 50px;
+                margin-left: 20px;
+                color: #262626
+            };
+            .project{
+                width: 90%;
+                margin-left: 20px;
+                .project-title{
+                    margin-bottom: 20px;
+                    li:first-child{
+                        width: 70px;
+                        float: left;
+                    };
+                    li:nth-child(2){
+                        width: 640px;
+                        overflow: hidden;
+                    }
+                    
+                }
+            }
+        };
+        .evaluation{
+            width: 100%;
+            margin-top: 20px;
+            h3{
+                line-height: 50px;
+                color: #3188FF
+            };
+            p{
+                margin-left: 20px;
+            }
+        }
+    }
+}
+//新窗口查看简历联系人
+.candidateResume{
+    width: 880px;
+    margin: 56px auto 100px;
+    overflow: auto;
+    .basicInfo{
+        width: 100%;
+        overflow: hidden;
+        .basicInfo-left{
+            float: left;
+            overflow: hidden;
+            margin-left: 20px;
+            h3{
+                line-height: 50px;
+            };
+            p{
+                line-height: 50px
+            }
+        };
+        .basicInfo-right{
+            width: 400px;
+            float: right;
+            margin-top: 20px;
+            .ant-btn{
+                width: 100px;
+                margin-right: 30px;
+            }
+        }
+    };
+    .jobIntension{
+        width: 100%;
+        margin-top: 20px;
+        h3{
+            line-height: 50px;
+            color: #3188FF
+        }
+        .intensionInfo{
+            margin-left: 20px;
+            li{
+                height: 35px;
+                span{
+                    line-height: 35px;
+                }
+                span:first-child{
+                    color:#8F9EB4
+                }
+            }
+        }
+    }
+    .education{
+        width: 100%;
+        margin-top: 20px;
+        h3{
+            line-height: 50px;
+            color: #3188FF
+        }
+        p{
+            margin-left: 20px;
+        }
+    };
+    .workExperience{
+        width: 100%;
+        margin-top: 20px;
+        overflow: hidden;
+        h3{
+            line-height: 50px;
+            color: #3188FF
+        };
+        .company{
+            width: 100%;
+            overflow: hidden;
+            .company-h3{
+                width: 300px;
+                margin-left: 20px;
+                float: left;
+                color: #262626
+            }
+            p{
+                width: 270px;
+                float: left;
+                line-height: 50px
+            }
+        };
+        .workInfo{
+            margin-left: 20px;
+            li{
+                //height: 35px;
+                margin: 10px 0;
+                span{
+                    line-height: 35px;
+                }
+                span:first-child{
+                    color:#8F9EB4
+                }
+            }
+        }
+    };
+    .projectExperience{
+        width: 100%;
+        margin-top: 20px;
+        h3{
+            line-height: 50px;
+            color: #3188FF
+        };
+        .projectExperience-title{
+            line-height: 50px;
+            margin-left: 20px;
+            color: #262626
+        };
+        .project{
+            width: 90%;
+            margin-left: 20px;
+            .project-title{
+                margin-bottom: 20px;
+                li:first-child{
+                    width: 70px;
+                    float: left;
+                };
+                li:nth-child(2){
+                    width: 640px;
+                    overflow: hidden;
+                }
+                
+            }
+        }
+    };
+    .evaluation{
+        width: 100%;
+        margin-top: 20px;
+        h3{
+            line-height: 50px;
+            color: #3188FF
+        };
+        p{
+            margin-left: 20px;
+        }
+    }
+}
+
+

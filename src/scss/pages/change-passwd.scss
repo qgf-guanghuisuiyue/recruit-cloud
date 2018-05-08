@@ -1,0 +1,10 @@
+.change-passwd-page {
+    ul {
+        width:353px; 
+    }
+    div.table-cell {
+        &:first-child {
+            width: 68px;
+        }
+    }
+}

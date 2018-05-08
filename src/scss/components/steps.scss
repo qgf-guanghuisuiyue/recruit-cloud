@@ -1,0 +1,81 @@
+$border-color: #c0c0c0;
+
+@mixin settings() {
+    width: 33px;
+    height: 33px;
+    border-radius: 33px;
+    line-height: 33px;
+    background-color: $border-color;
+}
+
+.rc-steps-label-vertical {
+    .rc-steps-head,.rc-steps-tail {
+        padding-right: 0px !important;
+    }
+    .rc-steps-head-inner {
+       @include settings();
+    }
+    .rc-steps-main {
+        margin-top: 6px;
+    }
+}
+
+.rc-steps {
+    .rc-steps-tail {
+        top: 16px;
+    }
+    .rc-steps-item.rc-steps-custom .rc-steps-head-inner {
+        @include settings();
+        .rc-steps-icon {
+            font-size: 14px;
+        }
+    }
+    .rc-steps-item.rc-steps-custom.rc-steps-status-process {
+        .rc-steps-head-inner > .rc-steps-icon {
+            color: #FFF;
+        }
+    }
+    .rc-steps-item.rc-steps-status-finish {
+        .rc-steps-tail > i {
+            background-color: $theme-color;
+        }
+        .rc-steps-head-inner {
+            border-color: $theme-color;
+            background-color: $theme-color;
+            .rc-steps-icon {
+                color: #FFF;
+            }
+        }
+        .rc-steps-title {
+            color: $theme-color;
+        }
+    }
+    .rc-steps-item.rc-steps-status-process {
+        .rc-steps-head-inner {
+            border-color: $theme-color;
+            background-color: $theme-color;
+        }
+        .rc-steps-title {
+            color: $theme-color;
+        }
+        .rc-steps-tail > i {
+            background-color: $border-color;
+        }
+    }
+    .rc-steps-item.rc-steps-status-wait {
+        .rc-steps-tail > i {
+            background-color: $border-color;
+        }
+        .rc-steps-head-inner {
+            background-color: $border-color;
+            border-color: transparent;
+            .rc-steps-icon {
+                color: #FFF;
+            }
+        }
+        .rc-steps-title {
+            font-size: 12px;
+            color: $border-color;
+        }
+    }
+}

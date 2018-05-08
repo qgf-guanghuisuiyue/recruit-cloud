@@ -1,0 +1,13 @@
+.setting-email-page {
+    ul {
+        width:368px; 
+    }
+    div.table-cell {
+        &:first-child {
+            width: 82px;
+        }
+    }
+    .errorEmail, .errorResume, .errorPwd{
+        border: 1px solid #ff3131
+    }
+}

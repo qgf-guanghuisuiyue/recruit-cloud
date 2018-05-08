@@ -1,0 +1,132 @@
+
+
+//拖拽框
+.dragger-wrap {
+    .ant-modal-body {
+        padding: 30px;
+    }
+    .ant-upload.ant-upload-drag {
+        padding: 30px 90px;
+        .ant-upload-drag-container {
+            color: $box-font-color;
+            font-weight: bold;
+            font-size: 16px;
+            span {
+                color: $theme-color;
+            }
+        }
+    }
+    .upload-footer {
+        padding-top: 30px;
+        border-top: none;
+        text-align: center;
+        .ant-btn-lg {
+            height: 40px;
+            padding: 0 40px;
+            font-size: 18px;
+            color: #fff;
+        }
+        button {
+            &:first-child {
+                background-color: #c0c0c0;
+                &:hover {
+                    border-color: transparent;
+                }
+            }
+            &+button {
+                margin-left: 16px;
+            }
+        }
+        p {
+            margin-top: 20px;
+            font-size: 12px;
+            color: $box-font-color;
+            a {
+                text-decoration: underline;
+                color: $theme-color;
+                font-weight: bold;
+            }
+            &:before {
+                content: '*';
+                font-size: 120%;
+            }
+        }
+    }
+}
+
+
+
+.new-clerk-form {
+    .control {
+        padding-left: 16px;
+        height: 63px;
+        line-height: 63px;
+        background-color: #ebebeb;
+        .breadName {
+            margin-left: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            vertical-align: middle;
+        }
+    }
+    .form-field {
+        padding-top: 60px;
+        span {
+            font-size: 16px;
+            
+        }
+        li {
+            padding-bottom: 24px;
+        }
+        .inline-block > span {
+            display: inline-block;
+            width: 217px;
+            margin-right: 54px;
+            text-align: right;
+        }
+        .inline-tree-select > span {
+            margin-right: 0;
+        }
+        .city-regions > span {
+            text-align: left;
+        }
+        input {
+            width: 229px;
+            height: 40px;
+            font-size: 14px;
+            color: #868686;
+            padding-left: 13px;
+        }
+        .ant-select-arrow:before,
+        .anticon-down:before {
+            content: '\E60B';
+            font-size: 16px;
+            color: $theme-color;
+        }
+        //圆角矩形
+        .ant-select-selection,
+        .ant-input {
+            border-radius: 10px;
+        }
+    }
+    .consequense-field {
+        margin-top: 36px;
+        text-align: center;
+        button {
+            width: 114px;
+            height: 40px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #FFF;
+            border-radius: 8px;
+            &:first-child {
+                margin-right: 16px;
+                background-color: #c0c0c0;
+                &:hover,
+                &:focus {
+                    border-color: #c0c0c0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+/* === Preloader === */
+.preloader,.preloader-white {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(/static/svg/preloader.svg);
+    background-position: 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    -webkit-animation: preloader-spin 1s steps(12, end) infinite;
+    animation: preloader-spin 1s steps(12, end) infinite;
+}
+.preloader-white {
+    background-image: url(/static/svg/preloader-white.svg);
+}
+@keyframes preloader-spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}

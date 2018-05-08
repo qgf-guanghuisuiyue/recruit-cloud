@@ -1,0 +1,48 @@
+.task-page {
+    .box-border {
+        background-color: #FFF;
+        padding: 16px 16px 124px;
+    }
+    .data-table {
+        tr {
+            &:first-child td:first-child {
+                padding-left: 0 !important;
+                span {
+                    width: 60px;
+                    white-space: normal;
+                    margin: 0 auto;
+                    display: block;
+                }
+            }
+            &:last-child td {
+                &:first-child {
+                    background-color: $theme-color !important;
+                    color: #FFF;
+                }
+                // font-weight: bold;
+                // text-align: center;
+            }
+        }
+    }
+    .desc-table {
+        td {
+            text-align: center;
+        }
+    }
+    .ant-table-wrapper  {
+        margin-top: 16px;
+        &.no-margin-border {
+            margin: 0;
+            table {
+                border-top: 0;
+            }
+        }
+    }
+    .download {
+        display: block;
+        width: 194px;
+        height: 40px;
+        margin: 30px auto 0;
+        font-size: 18px;
+    }
+}

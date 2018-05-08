@@ -1,0 +1,86 @@
+.email-editor-containr {
+    position: relative;
+    width: 850px;
+    margin: 0 auto;
+    .table-cell {
+        font-size: 14px;
+        vertical-align: middle;
+        &:first-child {
+            width: 61px;
+        }
+    }
+    .send-people {
+        position: relative;
+        padding: 15px 20px;
+        &:after {
+            @include border-bottom;
+        }
+        .table-cell {
+            &:first-child+div {
+                width: 50px;
+            }
+            img {
+                vertical-align: middle;
+                height: 40px;
+            }
+            &:last-child {
+                width: 114px;
+                button {
+                    width: 114px;
+                    height: 40px;
+                    border-radius: 8px;
+                    padding-left: 33px;
+                    font-size: 16px;
+                    background-image: url(../../static/images/email/send.png);
+                    background-size: 20px 19px;
+                    background-position: 8px center;
+                    background-repeat: no-repeat;
+                }
+            }
+            .address {
+                Input{
+                    width: 200px;
+                    float: left;
+                    border: 0px solid white;
+                    &:hover{
+                        border-color:white !important;
+                    }
+                }
+                Button{
+                    display: none;
+                    float: left;
+                    margin-left: 20px
+                }
+            }
+        }
+    }
+    .theme {
+        padding: 12px 20px;
+        input {
+            border: 0;
+            outline: 0;
+        }
+    }
+    // 邮件输入主题
+    input {
+        width: 100%;
+    }
+    // 上传按钮
+    button.upload {
+        position: absolute;
+        z-index: 20;
+        left: 20px;
+        bottom: 20px;
+        box-shadow: 0 10px 20px rgba(0,0,0,.19), 0 6px 6px rgba(0,0,0,.23);
+        border-color: lighten(#868686,.3);
+        width: 40px;
+        height: 40px;
+        vertical-align: middle;
+        border-radius: 9px;
+        background-color: #868686;
+        background-image: url(../../static/images/email/upload.png);
+        background-size: 20px 22px;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}

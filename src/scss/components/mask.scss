@@ -1,0 +1,11 @@
+.canvas-mask {
+    position: absolute;
+    top: 0px;
+    font-size: 30px;
+    text-align: center;
+    // color: $theme-color;
+    color: #FFF;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.498039);
+    z-index: 2;
+}

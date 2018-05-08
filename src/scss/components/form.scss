@@ -1,0 +1,120 @@
+.form {
+    .bottom10 {
+        margin-bottom: 10px;
+    }
+    .search{
+        width: 950px;
+        margin: 0 auto;
+        .ant-select{
+            margin-right: 40px
+        }
+       
+    }
+    input {
+        margin-right: 16px;
+        border-radius: 8px;
+        font-size: 16px;
+        height: 40px;
+        color: #868686;
+        padding-left: 13px;
+        
+    }
+    
+    // .ant-btn {
+    //     width: 114px;
+    //     height: 40px;
+    //     font-size: 18px;
+    //     color: #FFF;
+    //     &:hover {
+    //         border-color: transparent;
+    //         color: #FFF;
+    //     }
+    //     &.ant-btn-primary {
+    //         margin-right: 16px;
+    //     }
+    //     &.grey {
+    //         background-color: #c0c0c0;
+    //     }
+    // }
+    .bottom28 {
+        margin-bottom: 28px;
+        .ant-btn {
+            width: 100px;
+            height: 30px;
+            margin-right: 10px;
+            font-size: 14px;
+            &:hover {
+                border-color: #0186ca;
+                color: #0186ca;
+            }
+        }
+    }
+
+    .form-btn {
+        position: absolute;
+        right: 0;
+        top: 105px;
+        z-index: 999;
+        .ant-btn {
+            top: -6px;
+            width: 111px;
+            height: 30px;
+            line-height: 30px;
+            margin-right: 10px;
+            font-size: 14px;
+            span+.anticon {
+                margin-left: 0;
+            }
+            .import {
+                background: url(/static/images/talent/import.png) 50% 50% no-repeat;
+                width: 13px;
+                height: 12px;
+            }
+        }
+    }
+    
+}
+
+
+.form-btn select , .form-btn .ant-select-selection , .form-btn .ant-select-selection-selected-value ,
+ .form-btn .ant-select-selection__rendered{
+    height: 30px !important;
+    line-height: 30px;
+    font-size: 14px
+}
+.ant-input-affix-wrapper .ant-input{
+    width: 200px !important;
+    height: 36px;
+    border-radius: 30px;
+    font-size: 14px;
+    padding-left: 15px;
+    background-color: #f3f3f3;
+    color: #868686;
+    border: none;
+    &:focus {
+            border: none;
+            box-shadow: none;
+        }
+        img {
+            width: 17px;
+            height: 17px;
+        }
+}
+.form-btns {
+    .ant-btn {
+        width: 114px;
+        height: 40px;
+        font-size: 18px;
+        color: #FFF;
+        &:hover {
+            border-color: transparent;
+            color: #FFF;
+        }
+        &.ant-btn-primary {
+            margin-right: 16px;
+        }
+        &.grey {
+            background-color: #c0c0c0;
+        }
+    }
+}
